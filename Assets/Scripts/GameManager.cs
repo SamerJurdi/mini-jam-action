@@ -6,10 +6,13 @@ public class GameManager : MonoBehaviour
 {
     public string nameOfSomethihg;
     public GameObject Player;
+    [Header("Enemies")]
+    public GameObject EnemyPrefab;
+    public int intervalBetweenSpawns;
+    private float timePassed;
     public string thisIsATest;
     public string JustTesting;
     public int thisIsMyNumber;
-    public GameObject EnemyPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +25,6 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         // instantiate enemies on a time interval in a random position
+        Instantiate(EnemyPrefab);
     }
 }
