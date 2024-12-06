@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public string thisIsATest;
     public string JustTesting;
     public int thisIsMyNumber;
+    public GameObject EnemyPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // instantiate enemies on a time interval in a random position
     }
 }
