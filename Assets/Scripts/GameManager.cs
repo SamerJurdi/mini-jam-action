@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private static GameManager GM;
     public string nameOfSomethihg;
     public GameObject Player;
     [Header("Enemies")]
@@ -23,6 +24,8 @@ public class GameManager : MonoBehaviour
     {
         //
 
+        if (GM == null)
+            GM = this;
         //
     }
 
@@ -46,5 +49,10 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    float GetTimePassed()
+    {
+        return timePassed;
     }
 }
