@@ -6,6 +6,9 @@ public class Enemy : MonoBehaviour
 {
     Rigidbody2D myRBody;
     public float mySpeed = 6.0f;
+    public GameObject LaserPrefab;
+    public float ShotInterval;
+    public float ShotSpeed;
     // Start is called before the first frame update
     void Start()
     {
