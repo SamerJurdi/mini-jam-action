@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public GameObject LaserPrefab;
     public float ShotInterval;
     public float ShotSpeed;
+    public float ShotSpawningDistanceY;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,16 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (GameManager.GM.GetTimePassed() % ShotInterval < Time.deltaTime)
+        {
+            // fire a shot
+            Instantiate(LaserPrefab, new Vector3(this.myRBody.transform.position.x, this.myRBody.transform.position.y + ShotSpawningDistanceY, 0.0f), Quaternion.identity);
+        }
+    }
+
+    public void CleanUpAndDestroy()
+    {
+        Debug.Log("Destroying Enemy");
+        //Destroy(gameObject);
     }
 }
