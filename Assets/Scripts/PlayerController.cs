@@ -58,10 +58,23 @@ public class PlayerController : MonoBehaviour
     private void EnforceBoundary()
     {
         Vector3 clampedPosition = transform.position;
-
-        // Clamp the player's Y position within fixed world space units
         clampedPosition.y = Mathf.Clamp(clampedPosition.y, minY, maxY);
-
         transform.position = clampedPosition;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            HandleEnemyCollision();
+        }
+    }
+
+    private void HandleEnemyCollision()
+    {
+        Debug.Log("Handling enemy collision...");
+        // TODO: Update GameManager
+        // TODO: Add Destruction/Damage Animation
+        // TODO: Add Destruction/Damage SFX
     }
 }
