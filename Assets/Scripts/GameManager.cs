@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     [Header("Enemies")]
     public GameObject EnemyPrefab;
     public float intervalBetweenSpawns = 5.0f;
+    public float SpawnPositionY = 0.0f;
+    public float SpawnPositionMinX = -5.0f;
+    public float SpawnPositionMaxX = 5.0f;
     private float timePassed;
     public string thisIsATest;
     public string JustTesting;
@@ -27,6 +30,6 @@ public class GameManager : MonoBehaviour
         // instantiate enemies on a time interval in a random position
         timePassed += Time.deltaTime;
         if (timePassed % intervalBetweenSpawns <= Time.deltaTime)
-            Instantiate(EnemyPrefab);
+            Instantiate(EnemyPrefab, new Vector3(Random.Range(SpawnPositionMinX,SpawnPositionMaxX),SpawnPositionY,0),Quaternion.identity);
     }
 }
