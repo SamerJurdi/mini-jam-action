@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject Player;
     [Header("Enemies")]
     public GameObject EnemyPrefab;
-    public int intervalBetweenSpawns;
+    public float intervalBetweenSpawns = 5.0f;
     private float timePassed;
     public string thisIsATest;
     public string JustTesting;
@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         // instantiate enemies on a time interval in a random position
-        Instantiate(EnemyPrefab);
+        timePassed += Time.deltaTime;
+        if (timePassed % intervalBetweenSpawns <= Time.deltaTime)
+            Instantiate(EnemyPrefab);
     }
 }
