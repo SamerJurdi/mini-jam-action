@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private GameManager gameManager;
     [Header("Player Movement")]
     public float moveSpeed = 5f;
     public float tiltAngle = 45f;
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        gameManager = GameObject.FindWithTag("GameController").GetComponent<GameManager>();
     }
 
     void Update()
@@ -70,7 +72,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("EnemyLaser") || collision.gameObject.CompareTag("Enemy"))
         {
             HandleEnemyCollision();
         }
@@ -79,7 +81,8 @@ public class PlayerController : MonoBehaviour
     private void HandleEnemyCollision()
     {
         Debug.Log("Handling enemy collision...");
-        // TODO: Update GameManager
+        Destroy(gameObject);
+        gameManager.PlayerDied();
         // TODO: Add Destruction/Damage Animation
         // TODO: Add Destruction/Damage SFX
     }

@@ -6,6 +6,19 @@ public class GameManager : MonoBehaviour
 {
     //public static GameManager GM;
 
+    [Header("Player Settings")]
+    public GameObject playerPrefab;
+    [Tooltip("Initial position at the bottom")]
+    public Vector2 playerStartPos = new Vector2(0f, -10f);
+    [Tooltip("Final position after ascending")]
+    public Vector2 playerFinalPos = new Vector2(0f, -4f);
+    [Tooltip("Speed of the player's ascent")]
+    public float playerAscendSpeed = 2f;
+    [Tooltip("Time to wait before respawning the player")]
+    public float respawnCooldown = 3f;
+    private GameObject playerInstance;
+    private bool isPlayerAscending = false;
+
     [Header("Enemies")]
     public GameObject EnemyPrefab;
     public float intervalBetweenSpawns = 5.0f;
@@ -21,10 +34,12 @@ public class GameManager : MonoBehaviour
         //if (GameManager.GM == null)
             //GameManager.GM = this;
         //
+        SpawnPlayer();
     }
 
     void Update()
     {
+        HandlePlayerAscent();
         // instantiate enemies on a time interval in a random position
         timePassed += Time.deltaTime;
         if (timePassed % intervalBetweenSpawns <= Time.deltaTime)
@@ -64,5 +79,52 @@ public class GameManager : MonoBehaviour
     {
         // Handle Earth Health Logic
         Debug.Log(damageAmount);
+    }
+
+    private void SpawnPlayer()
+    {
+        if (playerPrefab != null)
+        {
+            // Spawn the player at the starting position
+            playerInstance = Instantiate(playerPrefab, playerStartPos, Quaternion.identity);
+            isPlayerAscending = true;
+        }
+    }
+
+    private void HandlePlayerAscent()
+    {
+        if (isPlayerAscending && playerInstance != null)
+        {
+            // Move the player towards the final position
+            playerInstance.transform.position = Vector2.MoveTowards(
+                playerInstance.transform.position,
+                playerFinalPos,
+                playerAscendSpeed * Time.deltaTime
+            );
+
+            // Stop moving when the player reaches the final position
+            if (Vector2.Distance(playerInstance.transform.position, playerFinalPos) < 0.01f)
+            {
+                isPlayerAscending = false;
+                Debug.Log("Player ascent complete.");
+            }
+        }
+    }
+
+    public void PlayerDied()
+    {
+        Debug.Log("Player died. Respawning...");
+        if (playerInstance != null)
+        {
+            Destroy(playerInstance);
+        }
+        StartCoroutine(RespawnPlayerAfterCooldown());
+    }
+
+    private IEnumerator RespawnPlayerAfterCooldown()
+    {
+        yield return new WaitForSeconds(respawnCooldown);
+        SpawnPlayer();
+        Debug.Log("Player respawned.");
     }
 }

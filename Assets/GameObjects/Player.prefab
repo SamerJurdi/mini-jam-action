@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  tiltAngle: 45
+  tiltAngle: 20
   maxY: -2
   minY: -4.5
   laserPrefab: {fileID: 6508633716891465541, guid: 49b1bba4c9ff2b34f819382a85d5aa1e, type: 3}
