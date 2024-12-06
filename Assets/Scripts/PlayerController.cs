@@ -16,6 +16,11 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Lower boundary in world units")]
     public float minY = -4.5f;
 
+    [Header("Shooting")]
+    public GameObject laserPrefab;
+    public Transform laserSpawnPoint;
+    public float laserSpeed = 20f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -24,6 +29,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         UpdateRotation(movement.x);
+        HandleShooting();
     }
 
     void FixedUpdate()
@@ -76,5 +82,27 @@ public class PlayerController : MonoBehaviour
         // TODO: Update GameManager
         // TODO: Add Destruction/Damage Animation
         // TODO: Add Destruction/Damage SFX
+    }
+
+    private void HandleShooting()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            // TODO: Play Laser shot SFX
+            ShootLaser();
+        }
+    }
+
+    private void ShootLaser()
+    {
+        if (laserPrefab != null && laserSpawnPoint != null)
+        {
+            GameObject laser = Instantiate(laserPrefab, laserSpawnPoint.position, transform.rotation);
+            Rigidbody2D laserRb = laser.GetComponent<Rigidbody2D>();
+            if (laserRb != null)
+            {
+                laserRb.velocity = transform.up * laserSpeed;
+            }
+        }
     }
 }
