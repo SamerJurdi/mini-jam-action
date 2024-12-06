@@ -518,7 +518,7 @@ MonoBehaviour:
   SpawnPositionY: 10
   SpawnPositionMinX: -5
   SpawnPositionMaxX: 5
-  DestroyPositionY: -100
+  DestroyPositionY: -5
   thisIsATest: cfd
   JustTesting: 
   thisIsMyNumber: 0

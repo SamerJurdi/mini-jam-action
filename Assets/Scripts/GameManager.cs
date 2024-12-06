@@ -41,9 +41,15 @@ public class GameManager : MonoBehaviour
         {
             for (int i = 0; i < enemiesList.Count; i++)
             {
-                if (enemiesList[i].transform.position.y < DestroyPositionY)
+                GameObject enemy = enemiesList[i];
+                if (enemy == null)
                 {
-                    GameObject enemy = enemiesList[i];
+                    enemiesList.RemoveAt(i);
+                    Debug.Log("Removed destroyed enemy.");
+                    i--;
+                }
+                else if (enemy.transform.position.y < DestroyPositionY)
+                {
                     enemiesList.RemoveAt(i);
                     enemy.GetComponent<Enemy>().CleanUpAndDestroy();
                     i--;
