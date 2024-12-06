@@ -49,9 +49,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mySpeed: 3
   LaserPrefab: {fileID: 6508633716891465541, guid: a01646b9ab57e954587831d9138806f8, type: 3}
-  ShotInterval: 0
-  ShotSpeed: 0
-  ShotSpawningDistanceY: 0
+  ShotInterval: 3
+  ShotSpeed: -7
+  ShotSpawningDistanceY: -1
 --- !u!58 &2465968166142455477
 CircleCollider2D:
   m_ObjectHideFlags: 0

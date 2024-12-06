@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager GM;
+    //public static GameManager GM;
     public string nameOfSomethihg;
     public GameObject Player;
     [Header("Enemies")]
@@ -24,8 +24,8 @@ public class GameManager : MonoBehaviour
     {
         //
 
-        if (GameManager.GM == null)
-            GameManager.GM = this;
+        //if (GameManager.GM == null)
+            //GameManager.GM = this;
         //
     }
 

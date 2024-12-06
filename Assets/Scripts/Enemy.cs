@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     Rigidbody2D myRBody;
     public float mySpeed = 6.0f;
+    [Header("Projectile")]
     public GameObject LaserPrefab;
     public float ShotInterval;
     public float ShotSpeed;
@@ -20,10 +21,11 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.GM.GetTimePassed() % ShotInterval < Time.deltaTime)
+        if (Time.time % ShotInterval < Time.deltaTime)
         {
             // fire a shot
-            Instantiate(LaserPrefab, new Vector3(this.myRBody.transform.position.x, this.myRBody.transform.position.y + ShotSpawningDistanceY, 0.0f), Quaternion.identity);
+            GameObject temp = Instantiate(LaserPrefab, new Vector3(this.myRBody.transform.position.x, this.myRBody.transform.position.y + ShotSpawningDistanceY, 0.0f), Quaternion.identity);
+            temp.GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f,ShotSpeed);
         }
     }
 
