@@ -11,20 +11,14 @@ public class PlayerController : MonoBehaviour
     private Vector2 movement;
 
     [Header("Boundaries Configuration")]
-    [Range(0f, 1f)]
-    public float maxHeight = 0.3f;
-    private float screenHeight;
-    private float minY;
-    private float maxY;
+    [Tooltip("Upper boundary in world units")]
+    public float maxY = -2f;
+    [Tooltip("Lower boundary in world units")]
+    public float minY = -4.5f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
-        // Calculate screen boundaries
-        screenHeight = Camera.main.orthographicSize * 2f;
-        minY = -screenHeight / 2;
-        maxY = minY + screenHeight * maxHeight;
     }
 
     void Update()
@@ -64,7 +58,10 @@ public class PlayerController : MonoBehaviour
     private void EnforceBoundary()
     {
         Vector3 clampedPosition = transform.position;
+
+        // Clamp the player's Y position within fixed world space units
         clampedPosition.y = Mathf.Clamp(clampedPosition.y, minY, maxY);
+
         transform.position = clampedPosition;
     }
 }
