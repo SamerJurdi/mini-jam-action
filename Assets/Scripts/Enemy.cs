@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public float ShotInterval;
     public float ShotSpeed;
     public float ShotSpawningDistanceY;
+    public int earthDamage = 1;
 
     void Start()
     {

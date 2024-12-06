@@ -511,17 +511,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e7b60ab45e81f241a37a2e04e1b7b4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameOfSomethihg: ThisisMyName
-  Player: {fileID: 955570941037658048}
   EnemyPrefab: {fileID: 668038787147868426, guid: b38b328859bf0cd43980dca99af33f9f, type: 3}
   intervalBetweenSpawns: 5
   SpawnPositionY: 10
   SpawnPositionMinX: -5
   SpawnPositionMaxX: 5
   DestroyPositionY: -5
-  thisIsATest: cfd
-  JustTesting: 
-  thisIsMyNumber: 0
 --- !u!4 &1236949201
 Transform:
   m_ObjectHideFlags: 0
@@ -598,11 +593,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e990a6aae2a65f4a9687a06917d30f2, type: 3}
---- !u!1 &955570941037658048 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2289484584251459557, guid: 2e990a6aae2a65f4a9687a06917d30f2, type: 3}
-  m_PrefabInstance: {fileID: 955570941037658047}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

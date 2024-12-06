@@ -5,8 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     //public static GameManager GM;
-    public string nameOfSomethihg;
-    public GameObject Player;
+
     [Header("Enemies")]
     public GameObject EnemyPrefab;
     public float intervalBetweenSpawns = 5.0f;
@@ -16,20 +15,14 @@ public class GameManager : MonoBehaviour
     public float DestroyPositionY = -5.0f;
     private List<GameObject> enemiesList = new List<GameObject>();
     private float timePassed;
-    public string thisIsATest;
-    public string JustTesting;
-    public int thisIsMyNumber;
-    // Start is called before the first frame update
+
     void Start()
     {
-        //
-
         //if (GameManager.GM == null)
             //GameManager.GM = this;
         //
     }
 
-    // Update is called once per frame
     void Update()
     {
         // instantiate enemies on a time interval in a random position
@@ -50,8 +43,11 @@ public class GameManager : MonoBehaviour
                 }
                 else if (enemy.transform.position.y < DestroyPositionY)
                 {
+                    // Enemy Collided with Earth
                     enemiesList.RemoveAt(i);
-                    enemy.GetComponent<Enemy>().CleanUpAndDestroy();
+                    Enemy enemyController = enemy.GetComponent<Enemy>();
+                    DamageEarth(enemyController.earthDamage);
+                    enemyController.CleanUpAndDestroy();
                     i--;
                 }
             }
@@ -62,5 +58,11 @@ public class GameManager : MonoBehaviour
     public float GetTimePassed()
     {
         return timePassed;
+    }
+
+    public void DamageEarth(int damageAmount)
+    {
+        // Handle Earth Health Logic
+        Debug.Log(damageAmount);
     }
 }
