@@ -11,14 +11,13 @@ public class Enemy : MonoBehaviour
     public float ShotInterval;
     public float ShotSpeed;
     public float ShotSpawningDistanceY;
-    // Start is called before the first frame update
+
     void Start()
     {
         myRBody = GetComponent<Rigidbody2D>();
         myRBody.velocity = Vector2.down *mySpeed;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Time.time % ShotInterval < Time.deltaTime)
@@ -32,6 +31,6 @@ public class Enemy : MonoBehaviour
     public void CleanUpAndDestroy()
     {
         Debug.Log("Destroying Enemy");
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 }

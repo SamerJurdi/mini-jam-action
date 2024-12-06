@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public float SpawnPositionY = 0.0f;
     public float SpawnPositionMinX = -5.0f;
     public float SpawnPositionMaxX = 5.0f;
-    public float DestroyPositionY = -100.0f;
+    public float DestroyPositionY = -5.0f;
     private List<GameObject> enemiesList = new List<GameObject>();
     private float timePassed;
     public string thisIsATest;
@@ -36,19 +36,21 @@ public class GameManager : MonoBehaviour
         timePassed += Time.deltaTime;
         if (timePassed % intervalBetweenSpawns <= Time.deltaTime)
             enemiesList.Add(Instantiate(EnemyPrefab, new Vector3(Random.Range(SpawnPositionMinX,SpawnPositionMaxX),SpawnPositionY,0),Quaternion.identity));
-        if (enemiesList.Capacity > 0)
+
+        if (enemiesList.Count > 0)
         {
             for (int i = 0; i < enemiesList.Count; i++)
             {
                 if (enemiesList[i].transform.position.y < DestroyPositionY)
                 {
-                    GameObject temp = enemiesList[i];
-                    enemiesList.Remove(temp);
-                    Destroy(temp);
+                    GameObject enemy = enemiesList[i];
+                    enemiesList.RemoveAt(i);
+                    enemy.GetComponent<Enemy>().CleanUpAndDestroy();
                     i--;
                 }
             }
         }
+
     }
 
     public float GetTimePassed()
