@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public float SpawnPositionY = 0.0f;
     public float SpawnPositionMinX = -5.0f;
     public float SpawnPositionMaxX = 5.0f;
+    public float DestroyPositionY = -100.0f;
+    private List<GameObject> enemiesList = new List<GameObject>();
     private float timePassed;
     public string thisIsATest;
     public string JustTesting;
@@ -30,6 +32,19 @@ public class GameManager : MonoBehaviour
         // instantiate enemies on a time interval in a random position
         timePassed += Time.deltaTime;
         if (timePassed % intervalBetweenSpawns <= Time.deltaTime)
-            Instantiate(EnemyPrefab, new Vector3(Random.Range(SpawnPositionMinX,SpawnPositionMaxX),SpawnPositionY,0),Quaternion.identity);
+            enemiesList.Add(Instantiate(EnemyPrefab, new Vector3(Random.Range(SpawnPositionMinX,SpawnPositionMaxX),SpawnPositionY,0),Quaternion.identity));
+        if (enemiesList.Capacity > 0)
+        {
+            for (int i = 0; i < enemiesList.Count; i++)
+            {
+                if (enemiesList[i].transform.position.y < DestroyPositionY)
+                {
+                    GameObject temp = enemiesList[i];
+                    enemiesList.Remove(temp);
+                    Destroy(temp);
+                    i--;
+                }
+            }
+        }
     }
 }
