@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public string nameOfSomethihg;
     public GameObject Player;
     public string thisIsATest;
+    public int thisIsMyNumber;
     // Start is called before the first frame update
     void Start()
     {
