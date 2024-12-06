@@ -21,13 +21,16 @@ public class GameManager : MonoBehaviour
 
     [Header("Enemies")]
     public GameObject EnemyPrefab;
-    public float intervalBetweenSpawns = 5.0f;
+    public float maxIntervalBetweenSpawns = 5.0f;
+    public float minIntervalBetweenSpawns = 2.0f;
+    public float maxIntervalTime = 360.0f;
     public float SpawnPositionY = 0.0f;
     public float SpawnPositionMinX = -5.0f;
     public float SpawnPositionMaxX = 5.0f;
     public float DestroyPositionY = -5.0f;
     private List<GameObject> enemiesList = new List<GameObject>();
     private float timePassed;
+    private float lastSpawnTime;
 
     void Start()
     {
@@ -42,8 +45,16 @@ public class GameManager : MonoBehaviour
         HandlePlayerAscent();
         // instantiate enemies on a time interval in a random position
         timePassed += Time.deltaTime;
-        if (timePassed % intervalBetweenSpawns <= Time.deltaTime)
-            enemiesList.Add(Instantiate(EnemyPrefab, new Vector3(Random.Range(SpawnPositionMinX,SpawnPositionMaxX),SpawnPositionY,0),Quaternion.identity));
+
+        float intervalBetweenSpawns = minIntervalBetweenSpawns;
+        if (timePassed < maxIntervalTime) // we stop decreasing spawn time at the maximum length of time
+            intervalBetweenSpawns += ((maxIntervalBetweenSpawns - minIntervalBetweenSpawns) * ((maxIntervalTime - timePassed) / maxIntervalTime));
+
+        if (timePassed > lastSpawnTime + intervalBetweenSpawns)
+        {
+            enemiesList.Add(Instantiate(EnemyPrefab, new Vector3(Random.Range(SpawnPositionMinX, SpawnPositionMaxX), SpawnPositionY, 0), Quaternion.identity));
+            lastSpawnTime += intervalBetweenSpawns;
+        }
 
         if (enemiesList.Count > 0)
         {
