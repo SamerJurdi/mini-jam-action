@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
     public float ShotSpeed;
     public float ShotSpawningDistanceY;
     public int earthDamage = 1;
+    public int maxShipHealth = 5;
+    private int shipHealth;
     public int ScoreValue = 100;
     public GameObject LaserImpactPrefab;
     public GameObject ShipDeathVFXPrefab;
@@ -20,6 +22,8 @@ public class Enemy : MonoBehaviour
     {
         myRBody = GetComponent<Rigidbody2D>();
         myRBody.velocity = Vector2.down *mySpeed;
+
+        shipHealth = maxShipHealth;
     }
 
     void Update()
@@ -34,15 +38,25 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("PlayerLaser") || collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("PlayerLaser"))
         {
+            // take damage
+            shipHealth--;
             //Destroy Laser
             Destroy(collision.gameObject);
-            if (collision.gameObject.CompareTag("PlayerLaser"))
+            Instantiate(LaserImpactPrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, 0.0f), collision.transform.rotation);
+
+
+            // if out of health, blow up ship
+            if (shipHealth <= 0)
             {
-                Instantiate(LaserImpactPrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, 0.0f), collision.transform.rotation);
                 GameManager.GM.AddScore(ScoreValue);
+                CleanUpAndDestroy();
             }
+        }
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(collision.gameObject);
             CleanUpAndDestroy();
         }
     }
