@@ -61,6 +61,7 @@ public class GameManager : MonoBehaviour
         // instantiate enemies on a time interval in a random position
         timePassed += Time.deltaTime;
 
+        // Do wave spawning
         float intervalBetweenSpawns = minIntervalBetweenSpawns;
         if (timePassed < maxIntervalTime) // we stop decreasing spawn time at the maximum length of time
             intervalBetweenSpawns += ((maxIntervalBetweenSpawns - minIntervalBetweenSpawns) * ((maxIntervalTime - timePassed) / maxIntervalTime));
