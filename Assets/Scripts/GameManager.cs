@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    //public static GameManager GM;
+    public static GameManager GM;
 
     [Header("Player Settings")]
     public GameObject playerPrefab;
@@ -39,9 +39,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        //if (GameManager.GM == null)
-            //GameManager.GM = this;
-        //
+        if (GameManager.GM == null)
+            GameManager.GM = this;
+        
         SpawnPlayer();
         health = maxHealth;
     }
