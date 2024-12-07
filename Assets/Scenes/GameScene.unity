@@ -481,7 +481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -30, y: -25}
+  m_AnchoredPosition: {x: -100, y: -25}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &679546037
@@ -511,7 +511,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -737,6 +737,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1211274086}
+  - component: {fileID: 1211274087}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -761,6 +762,20 @@ Transform:
   - {fileID: 872445532}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1211274087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211274085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b96dd2d04757ed4198a3f1583681220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthbar: {fileID: 1219567421}
+  score: {fileID: 679546037}
 --- !u!1 &1219567420
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,6 +991,10 @@ MonoBehaviour:
   SpawnPositionMinX: -5
   SpawnPositionMaxX: 5
   DestroyPositionY: -5
+  health: 0
+  maxHealth: 5
+  Score: 0
+  ScoreIncreasePerSecond: 10
 --- !u!4 &1236949201
 Transform:
   m_ObjectHideFlags: 0
