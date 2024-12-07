@@ -41,6 +41,8 @@ public class GameManager : MonoBehaviour
 
     [Header("ObjectReferences")]
     public GameObject resetPanel;
+    public AudioClip gameMusicRef;
+    public AudioClip deathMusicRef;
 
     void Start()
     {
@@ -49,6 +51,7 @@ public class GameManager : MonoBehaviour
         
         SpawnPlayer();
         earthHealth = maxEarthHealth;
+        MusicManager.MM.PlayMusic(gameMusicRef, true);
     }
 
     void Update()
@@ -125,6 +128,7 @@ public class GameManager : MonoBehaviour
             earthHealth = 0;
         if (earthHealth <= 0)
         {
+            MusicManager.MM.PlayMusic(deathMusicRef, false);
             Debug.Log("Earth is dead"); // TODO: Trigger game over sequence
             Time.timeScale = 0;
             resetPanel.SetActive(true);
