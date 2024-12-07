@@ -82,6 +82,11 @@ public class PlayerController : MonoBehaviour
                 Instantiate(LaserImpactPrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, 0.0f), Quaternion.identity);
             HandleEnemyCollision();
         }
+        if (collision.gameObject.CompareTag("HealthPickup"))
+        {
+            GameManager.GM.HealEarth(1);
+            Destroy(collision.gameObject);
+        }
     }
 
     private void HandleEnemyCollision()

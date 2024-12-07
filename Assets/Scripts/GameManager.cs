@@ -208,6 +208,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void HealEarth(int healAmount)
+    {
+        // Handle Earth Health Logic
+        earthHealth += healAmount;
+        if (earthHealth > maxEarthHealth)
+            earthHealth = maxEarthHealth;
+    }
+
     private void SpawnPlayer()
     {
         if (playerPrefab != null)
