@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8976020461248111557}
   - component: {fileID: 379993479118627173}
   - component: {fileID: -1242705082612433577}
+  - component: {fileID: 1717998400250718166}
   m_Layer: 0
   m_Name: EnemyLaser
   m_TagString: EnemyLaser
@@ -203,6 +204,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1717998400250718166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6508633716891465541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f5dda7f6116014390ac00313fd438f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 10
 --- !u!1 &8583230963577140923
 GameObject:
   m_ObjectHideFlags: 0
