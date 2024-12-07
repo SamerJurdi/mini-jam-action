@@ -70,8 +70,12 @@ public class GameManager : MonoBehaviour
         {
             // Spawn enemy ship
             int enemyShipType = 0;
-            if (timePassed > 20)
+            if (timePassed < 20)
+                enemyShipType = 0;
+            else if (timePassed < 40)
                 enemyShipType = 1;
+            else
+                enemyShipType = Mathf.FloorToInt(Random.Range(0, 1.99f));
             
             enemiesList.Add(Instantiate(EnemyPrefabs[enemyShipType], new Vector3(Random.Range(SpawnPositionMinX, SpawnPositionMaxX), SpawnPositionY, 0), Quaternion.identity));
             lastSpawnTime += intervalBetweenSpawns;
