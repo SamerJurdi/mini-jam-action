@@ -47,12 +47,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a129bb57d9166144c8fc6a43b12dcafc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mySpeed: 4
+  mySpeed: 1
   LaserPrefab: {fileID: 6508633716891465541, guid: a01646b9ab57e954587831d9138806f8, type: 3}
   ShotInterval: 2.5
   ShotSpeed: -9
   ShotSpawningDistanceY: -1
-  earthDamage: 1
+  earthDamage: 3
   ScoreValue: 200
   LaserImpactPrefab: {fileID: 4294549813438842789, guid: 5c7f2cf7fa3071b4fb996b1ad3e773a3, type: 3}
   ShipDeathVFXPrefab: {fileID: 3172087687793598005, guid: 56f9f416f72432f4285ae2f5f80c401a, type: 3}
