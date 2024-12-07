@@ -1243,7 +1243,9 @@ MonoBehaviour:
   playerFinalPos: {x: 0, y: -3}
   playerAscendSpeed: 2
   respawnCooldown: 3
-  EnemyPrefab: {fileID: 668038787147868426, guid: b38b328859bf0cd43980dca99af33f9f, type: 3}
+  EnemyPrefabs:
+  - {fileID: 668038787147868426, guid: b38b328859bf0cd43980dca99af33f9f, type: 3}
+  - {fileID: 668038787147868426, guid: 07247616080d58242927d8dd0eb0ce64, type: 3}
   maxIntervalBetweenSpawns: 5
   minIntervalBetweenSpawns: 2
   maxIntervalTime: 360
