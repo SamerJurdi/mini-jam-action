@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -35,11 +36,11 @@ public class GameManager : MonoBehaviour
     [Header("GameStats")]
     public int maxEarthHealth = 5;
     private int earthHealth;
-
     public int Score = 0;
     public int ScoreIncreasePerSecond = 10;
+
     [Header("ObjectReferences")]
-    public GameObject ResetButton;
+    public GameObject resetPanel;
 
     void Start()
     {
@@ -115,7 +116,8 @@ public class GameManager : MonoBehaviour
         if (earthHealth <= 0)
         {
             Debug.Log("Earth is dead"); // TODO: Trigger game over sequence
-            Instantiate(ResetButton, Vector3.zero, Quaternion.identity);
+            Time.timeScale = 0;
+            resetPanel.SetActive(true);
         }
     }
 
@@ -169,5 +171,11 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(respawnCooldown);
         SpawnPlayer();
         Debug.Log("Player respawned.");
+    }
+
+    public void PlayAgain()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("GameScene");
     }
 }
