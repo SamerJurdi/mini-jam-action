@@ -17,7 +17,10 @@ public class Enemy : MonoBehaviour
     public int ScoreValue = 100;
     public GameObject LaserImpactPrefab;
     public GameObject ShipDeathVFXPrefab;
+    public SpriteRenderer myGFX;
     private float spawnTimeStamp;
+    private float lastDamagedTimeStamp;
+    private float flashForDamageTime = 0.1f;
 
     void Start()
     {
@@ -36,6 +39,13 @@ public class Enemy : MonoBehaviour
             GameObject temp = Instantiate(LaserPrefab, new Vector3(this.myRBody.transform.position.x, this.myRBody.transform.position.y + ShotSpawningDistanceY, 0.0f), Quaternion.identity);
             temp.GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f,ShotSpeed);
         }
+
+        if (Time.time - lastDamagedTimeStamp < flashForDamageTime)
+        {
+            myGFX.color = Color.red;
+        }
+        else
+            myGFX.color = Color.white;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -44,6 +54,7 @@ public class Enemy : MonoBehaviour
         {
             // take damage
             shipHealth--;
+            lastDamagedTimeStamp = Time.time;
             //Destroy Laser
             Destroy(collision.gameObject);
             Instantiate(LaserImpactPrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, 0.0f), collision.transform.rotation);

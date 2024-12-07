@@ -57,6 +57,7 @@ MonoBehaviour:
   ScoreValue: 10
   LaserImpactPrefab: {fileID: 4294549813438842789, guid: 5c7f2cf7fa3071b4fb996b1ad3e773a3, type: 3}
   ShipDeathVFXPrefab: {fileID: 3172087687793598005, guid: 56f9f416f72432f4285ae2f5f80c401a, type: 3}
+  myGFX: {fileID: 3751003744272773140}
 --- !u!50 &5143351877096472147
 Rigidbody2D:
   serializedVersion: 4
