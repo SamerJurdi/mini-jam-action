@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public Transform laserSpawnPoint;
     public float laserSpeed = 20f;
     public GameObject LaserImpactPrefab;
+    public GameObject ShipDeathVFXPrefab;
 
     void Start()
     {
@@ -77,7 +78,8 @@ public class PlayerController : MonoBehaviour
         {
             // destroy that laser and spawn in laser impact VFX
             Destroy(collision.gameObject);
-            Instantiate(LaserImpactPrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, 0.0f), Quaternion.identity);
+            if (collision.gameObject.CompareTag("EnemyLaser"))
+                Instantiate(LaserImpactPrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, 0.0f), Quaternion.identity);
             HandleEnemyCollision();
         }
     }
@@ -86,6 +88,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Handling enemy collision...");
         Destroy(gameObject);
+        Instantiate(ShipDeathVFXPrefab, new Vector3(transform.position.x, transform.position.y, 0.0f), Quaternion.identity);
         gameManager.PlayerDied();
         // TODO: Add Destruction/Damage Animation
         // TODO: Add Destruction/Damage SFX

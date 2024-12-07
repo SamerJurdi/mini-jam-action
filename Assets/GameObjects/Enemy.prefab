@@ -54,6 +54,7 @@ MonoBehaviour:
   ShotSpawningDistanceY: -1
   earthDamage: 1
   LaserImpactPrefab: {fileID: 6439710918646609920, guid: a9b7c5211cd2eeb4b82d570e670b4b0c, type: 3}
+  ShipDeathVFXPrefab: {fileID: 305682832468878606, guid: 4d80adf474960d047be392de61d433db, type: 3}
 --- !u!58 &2465968166142455477
 CircleCollider2D:
   m_ObjectHideFlags: 0

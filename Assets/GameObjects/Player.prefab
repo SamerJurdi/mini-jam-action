@@ -140,6 +140,7 @@ MonoBehaviour:
   laserSpawnPoint: {fileID: 1349513631374210527}
   laserSpeed: 20
   LaserImpactPrefab: {fileID: 6439710918646609920, guid: a9b7c5211cd2eeb4b82d570e670b4b0c, type: 3}
+  ShipDeathVFXPrefab: {fileID: 7702660859116360410, guid: cc0df04cfdc593d419c4e41d89c101a2, type: 3}
 --- !u!50 &2042667564039313069
 Rigidbody2D:
   serializedVersion: 4
