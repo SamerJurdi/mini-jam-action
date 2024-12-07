@@ -53,6 +53,7 @@ MonoBehaviour:
   ShotSpeed: -9
   ShotSpawningDistanceY: -1
   earthDamage: 3
+  maxShipHealth: 5
   ScoreValue: 200
   LaserImpactPrefab: {fileID: 4294549813438842789, guid: 5c7f2cf7fa3071b4fb996b1ad3e773a3, type: 3}
   ShipDeathVFXPrefab: {fileID: 3172087687793598005, guid: 56f9f416f72432f4285ae2f5f80c401a, type: 3}
@@ -112,7 +113,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.03}
