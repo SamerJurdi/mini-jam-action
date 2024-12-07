@@ -51,20 +51,21 @@ public class Enemy : MonoBehaviour
             if (shipHealth <= 0)
             {
                 GameManager.GM.AddScore(ScoreValue);
-                CleanUpAndDestroy();
+                CleanUpAndDestroy(false);
             }
         }
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(collision.gameObject);
-            CleanUpAndDestroy();
+            CleanUpAndDestroy(false);
         }
     }
 
-    public void CleanUpAndDestroy()
+    public void CleanUpAndDestroy(bool hideSFX)
     {
         Debug.Log("Destroying Enemy");
-        Instantiate(ShipDeathVFXPrefab, new Vector3(transform.position.x, transform.position.y, 0.0f), Quaternion.identity);
+        if (!hideSFX)
+            Instantiate(ShipDeathVFXPrefab, new Vector3(transform.position.x, transform.position.y, 0.0f), Quaternion.identity);
         Destroy(gameObject);
     }
 }
