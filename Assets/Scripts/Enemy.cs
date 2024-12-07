@@ -39,8 +39,10 @@ public class Enemy : MonoBehaviour
             //Destroy Laser
             Destroy(collision.gameObject);
             if (collision.gameObject.CompareTag("PlayerLaser"))
+            {
                 Instantiate(LaserImpactPrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, 0.0f), collision.transform.rotation);
-            GameManager.GM.AddScore(ScoreValue);
+                GameManager.GM.AddScore(ScoreValue);
+            }
             CleanUpAndDestroy();
         }
     }
