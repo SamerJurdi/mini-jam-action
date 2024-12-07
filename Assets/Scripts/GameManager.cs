@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     private bool isPlayerAscending = false;
 
     [Header("Enemies")]
-    public GameObject EnemyPrefab;
+    public List<GameObject> EnemyPrefabs;
     public float maxIntervalBetweenSpawns = 5.0f;
     public float minIntervalBetweenSpawns = 2.0f;
     public float maxIntervalTime = 360.0f;
@@ -63,12 +63,17 @@ public class GameManager : MonoBehaviour
 
         // Do wave spawning
         float intervalBetweenSpawns = minIntervalBetweenSpawns;
-        if (timePassed < maxIntervalTime) // we stop decreasing spawn time at the maximum length of time
+        if (timePassed < maxIntervalTime)
             intervalBetweenSpawns += ((maxIntervalBetweenSpawns - minIntervalBetweenSpawns) * ((maxIntervalTime - timePassed) / maxIntervalTime));
-
+        // check if it's time to spawn an enemy ship
         if (timePassed > lastSpawnTime + intervalBetweenSpawns)
         {
-            enemiesList.Add(Instantiate(EnemyPrefab, new Vector3(Random.Range(SpawnPositionMinX, SpawnPositionMaxX), SpawnPositionY, 0), Quaternion.identity));
+            // Spawn enemy ship
+            int enemyShipType = 0;
+            if (timePassed > 20)
+                enemyShipType = 1;
+            
+            enemiesList.Add(Instantiate(EnemyPrefabs[enemyShipType], new Vector3(Random.Range(SpawnPositionMinX, SpawnPositionMaxX), SpawnPositionY, 0), Quaternion.identity));
             lastSpawnTime += intervalBetweenSpawns;
         }
 
