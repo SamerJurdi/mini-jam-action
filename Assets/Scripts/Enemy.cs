@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
     public int ScoreValue = 100;
     public GameObject LaserImpactPrefab;
     public GameObject ShipDeathVFXPrefab;
+    private float spawnTimeStamp;
 
     void Start()
     {
@@ -24,11 +25,12 @@ public class Enemy : MonoBehaviour
         myRBody.velocity = Vector2.down *mySpeed;
 
         shipHealth = maxShipHealth;
+        spawnTimeStamp = Time.time;
     }
 
     void Update()
     {
-        if (Time.time % ShotInterval < Time.deltaTime)
+        if ((Time.time - spawnTimeStamp) % ShotInterval < Time.deltaTime)
         {
             // fire a shot
             GameObject temp = Instantiate(LaserPrefab, new Vector3(this.myRBody.transform.position.x, this.myRBody.transform.position.y + ShotSpawningDistanceY, 0.0f), Quaternion.identity);
