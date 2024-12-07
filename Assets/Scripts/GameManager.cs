@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
             else
                 enemyShipType = Mathf.FloorToInt(Random.Range(0, 1.99f));
             
-            enemiesList.Add(Instantiate(EnemyPrefabs[enemyShipType], new Vector3(Random.Range(SpawnPositionMinX, SpawnPositionMaxX), SpawnPositionY, 0), Quaternion.identity));
+            SpawnEnemy(EnemyPrefabs[enemyShipType]);
             lastSpawnTime += intervalBetweenSpawns;
         }
 
@@ -107,6 +107,11 @@ public class GameManager : MonoBehaviour
             }
         }
 
+    }
+
+    public void SpawnEnemy(GameObject enemyRef)
+    {
+        enemiesList.Add(Instantiate(enemyRef, new Vector3(Random.Range(SpawnPositionMinX, SpawnPositionMaxX), SpawnPositionY, 0), Quaternion.identity));
     }
 
     public float GetTimePassed()
