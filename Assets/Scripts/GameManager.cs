@@ -31,9 +31,10 @@ public class GameManager : MonoBehaviour
     private List<GameObject> enemiesList = new List<GameObject>();
     private float timePassed;
     private float lastSpawnTime;
+
     [Header("GameStats")]
-    public int health;
-    public int maxHealth = 5;
+    public int maxEarthHealth = 5;
+    private int earthHealth;
 
     public int Score = 0;
     public int ScoreIncreasePerSecond = 10;
@@ -46,7 +47,7 @@ public class GameManager : MonoBehaviour
             GameManager.GM = this;
         
         SpawnPlayer();
-        health = maxHealth;
+        earthHealth = maxEarthHealth;
     }
 
     void Update()
@@ -99,16 +100,21 @@ public class GameManager : MonoBehaviour
         return timePassed;
     }
 
+    public float GetEarthHealth()
+    {
+        return (float)earthHealth / (float)maxEarthHealth;
+    }
+
     public void DamageEarth(int damageAmount)
     {
         // Handle Earth Health Logic
         Debug.Log(damageAmount);
-        health -= damageAmount;
-        if (health < 0)
-            health = 0;
-        if (health <= 0)
+        earthHealth -= damageAmount;
+        if (earthHealth < 0)
+            earthHealth = 0;
+        if (earthHealth <= 0)
         {
-            Debug.Log("you died.");
+            Debug.Log("Earth is dead"); // TODO: Trigger game over sequence
             Instantiate(ResetButton, Vector3.zero, Quaternion.identity);
         }
     }
