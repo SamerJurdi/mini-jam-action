@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
                     enemiesList.RemoveAt(i);
                     Enemy enemyController = enemy.GetComponent<Enemy>();
                     DamageEarth(enemyController.earthDamage);
-                    enemyController.CleanUpAndDestroy();
+                    enemyController.CleanUpAndDestroy(true);
                     i--;
                 }
             }
