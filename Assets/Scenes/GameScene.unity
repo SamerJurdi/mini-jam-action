@@ -1281,6 +1281,7 @@ MonoBehaviour:
   maxHealth: 5
   Score: 0
   ScoreIncreasePerSecond: 10
+  ResetButton: {fileID: 7213285851631664903, guid: 9cf78298464a2404cb4d736f5e35bae6, type: 3}
 --- !u!4 &1236949201
 Transform:
   m_ObjectHideFlags: 0

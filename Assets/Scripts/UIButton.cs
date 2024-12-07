@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class UIButton : MonoBehaviour
 {
-    public Camera mC;
     public Renderer HoverGraphic;
     public float leftMostCollision;
     public float rightMostCollision;
     public float highestMostCollision;
     public float lowestMostCollision;
+    public int functionality;
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +21,8 @@ public class UIButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            float mousePosX = mC.ScreenToWorldPoint(Input.mousePosition).x;
-            float mousePosY = mC.ScreenToWorldPoint(Input.mousePosition).y;
+            float mousePosX = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
+            float mousePosY = Camera.main.ScreenToWorldPoint(Input.mousePosition).y;
             if ((mousePosX > leftMostCollision && mousePosX < rightMostCollision) && (mousePosY > lowestMostCollision && mousePosY < highestMostCollision))
             {
                 // within the boundaries when clicked
@@ -42,6 +42,9 @@ public class UIButton : MonoBehaviour
     void ActivateButton()
     {
         //Debug.Log("Button Pressed");
-        SceneManager.LoadScene("GameScene");
+        if(functionality == 0) // StartButton
+            SceneManager.LoadScene("GameScene");
+        else if (functionality == 1) // ResetButton
+            SceneManager.LoadScene("GameScene");
     }
 }

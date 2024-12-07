@@ -31,12 +31,14 @@ public class GameManager : MonoBehaviour
     private List<GameObject> enemiesList = new List<GameObject>();
     private float timePassed;
     private float lastSpawnTime;
-
+    [Header("GameStats")]
     public int health;
     public int maxHealth = 5;
 
     public int Score = 0;
     public int ScoreIncreasePerSecond = 10;
+    [Header("ObjectReferences")]
+    public GameObject ResetButton;
 
     void Start()
     {
@@ -105,7 +107,10 @@ public class GameManager : MonoBehaviour
         if (health < 0)
             health = 0;
         if (health <= 0)
+        {
             Debug.Log("you died.");
+            Instantiate(ResetButton, Vector3.zero, Quaternion.identity);
+        }
     }
 
     private void SpawnPlayer()
