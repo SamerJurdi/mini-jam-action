@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour
     public int health;
     public int maxHealth = 5;
 
+    public int Score = 0;
+
     void Start()
     {
         //if (GameManager.GM == null)
