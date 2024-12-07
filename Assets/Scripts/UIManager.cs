@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class UIManager : MonoBehaviour
     [Header("Health")]
     public Transform healthbar;
     [Header("Score")]
-    public Transform score;
+    public Text score;
 
     // Start is called before the first frame update
     void Start()
@@ -20,5 +21,6 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         healthbar.localScale = new Vector3(GameManager.GM.health,0.5f,1);
+        score.text = "" + GameManager.GM.Score;
     }
 }
