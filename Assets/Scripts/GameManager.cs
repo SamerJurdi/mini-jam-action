@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     public int maxHealth = 5;
 
     public int Score = 0;
+    public int ScoreIncreasePerSecond = 10;
 
     void Start()
     {
@@ -49,6 +50,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         HandlePlayerAscent();
+
+        // every second, we get points
+        if (Mathf.Floor(timePassed) < Mathf.Floor(timePassed + Time.deltaTime))
+            GameManager.GM.AddScore(ScoreIncreasePerSecond);
         // instantiate enemies on a time interval in a random position
         timePassed += Time.deltaTime;
 
