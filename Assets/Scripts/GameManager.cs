@@ -32,12 +32,16 @@ public class GameManager : MonoBehaviour
     private float timePassed;
     private float lastSpawnTime;
 
+    public int health;
+    public int maxHealth = 5;
+
     void Start()
     {
         //if (GameManager.GM == null)
             //GameManager.GM = this;
         //
         SpawnPlayer();
+        health = maxHealth;
     }
 
     void Update()
@@ -90,6 +94,11 @@ public class GameManager : MonoBehaviour
     {
         // Handle Earth Health Logic
         Debug.Log(damageAmount);
+        health -= damageAmount;
+        if (health < 0)
+            health = 0;
+        if (health <= 0)
+            Debug.Log("you died.");
     }
 
     private void SpawnPlayer()
