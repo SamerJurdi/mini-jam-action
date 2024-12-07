@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
                 enemyShipType = 0;
             else if (timePassed < 40)
                 enemyShipType = 1;
-            else if (timePassed < 60)
+            else if (timePassed < 50)
             {
                 if (Random.Range(0,100f) < 88f)
                     enemyShipType = 0;
@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour
                     enemyShipType = 1;
                 intervalBetweenSpawns = 1.5f;
             }
-            else if (timePassed < 100)
+            else if (timePassed < 90)
             {
                 if (Random.Range(0, 100f) < 85f)
                     enemyShipType = 0;
@@ -132,7 +132,7 @@ public class GameManager : MonoBehaviour
                 enemyShipType = 1;
                 intervalBetweenSpawns = 2.8f;
             }
-            else if (timePassed < 220)
+            else if (timePassed < 210)
             {
                 if (Random.Range(0, 100f) < 80f)
                     enemyShipType = 0;
