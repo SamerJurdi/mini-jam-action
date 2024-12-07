@@ -17,6 +17,8 @@ public class Enemy : MonoBehaviour
     public int ScoreValue = 100;
     public GameObject LaserImpactPrefab;
     public GameObject ShipDeathVFXPrefab;
+    public GameObject HealthPickupPrefab;
+    public float chanceToDropHealthPickupOnDeath;
     public SpriteRenderer myGFX;
     private float spawnTimeStamp;
     private float lastDamagedTimeStamp;
@@ -78,7 +80,14 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log("Destroying Enemy");
         if (!hideSFX)
+        {
             Instantiate(ShipDeathVFXPrefab, new Vector3(transform.position.x, transform.position.y, 0.0f), Quaternion.identity);
+            if(Random.Range(0,1f) < chanceToDropHealthPickupOnDeath)
+            {
+                GameObject temp = Instantiate(HealthPickupPrefab, new Vector3(transform.position.x, transform.position.y, 0.0f), Quaternion.identity);
+                temp.GetComponent<Rigidbody2D>().velocity = myRBody.velocity;
+            }
+        }
         Destroy(gameObject);
     }
 }

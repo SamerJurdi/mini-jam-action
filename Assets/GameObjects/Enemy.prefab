@@ -57,6 +57,8 @@ MonoBehaviour:
   ScoreValue: 5
   LaserImpactPrefab: {fileID: 4294549813438842789, guid: 5c7f2cf7fa3071b4fb996b1ad3e773a3, type: 3}
   ShipDeathVFXPrefab: {fileID: 305682832468878606, guid: 4d80adf474960d047be392de61d433db, type: 3}
+  HealthPickupPrefab: {fileID: 8347834834671508322, guid: ee0a6f846a7718c49b41199a4cfc759d, type: 3}
+  chanceToDropHealthPickupOnDeath: 0.05
   myGFX: {fileID: 3751003744272773140}
 --- !u!58 &2465968166142455477
 CircleCollider2D:
