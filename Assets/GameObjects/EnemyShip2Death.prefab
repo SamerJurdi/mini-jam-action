@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5383863370869813200}
   - component: {fileID: 8884623825709522273}
   - component: {fileID: 449680889889372507}
+  - component: {fileID: -6967446716832332765}
   m_Layer: 0
   m_Name: EnemyShip2Death
   m_TagString: Untagged
@@ -106,3 +107,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-6967446716832332765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3172087687793598005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f5dda7f6116014390ac00313fd438f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 10
