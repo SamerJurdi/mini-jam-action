@@ -143,6 +143,11 @@ public class GameManager : MonoBehaviour
         StartCoroutine(RespawnPlayerAfterCooldown());
     }
 
+    public void AddScore(int scoreIncrease)
+    {
+        Score += scoreIncrease;
+    }
+
     private IEnumerator RespawnPlayerAfterCooldown()
     {
         yield return new WaitForSeconds(respawnCooldown);

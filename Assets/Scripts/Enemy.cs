@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     public float ShotSpeed;
     public float ShotSpawningDistanceY;
     public int earthDamage = 1;
+    public int ScoreValue = 100;
     public GameObject LaserImpactPrefab;
     public GameObject ShipDeathVFXPrefab;
 
@@ -39,7 +40,7 @@ public class Enemy : MonoBehaviour
             Destroy(collision.gameObject);
             if (collision.gameObject.CompareTag("PlayerLaser"))
                 Instantiate(LaserImpactPrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, 0.0f), collision.transform.rotation);
-
+            GameManager.GM.AddScore(ScoreValue);
             CleanUpAndDestroy();
         }
     }
