@@ -1007,16 +1007,16 @@ MonoBehaviour:
   EnemyPrefabs:
   - {fileID: 668038787147868426, guid: b38b328859bf0cd43980dca99af33f9f, type: 3}
   - {fileID: 668038787147868426, guid: 07247616080d58242927d8dd0eb0ce64, type: 3}
-  maxIntervalBetweenSpawns: 5
-  minIntervalBetweenSpawns: 2
-  maxIntervalTime: 360
+  maxIntervalBetweenSpawns: 3
+  minIntervalBetweenSpawns: 1
+  maxIntervalTime: 60
   SpawnPositionY: 10
   SpawnPositionMinX: -5
   SpawnPositionMaxX: 5
   DestroyPositionY: -5
-  maxEarthHealth: 4
+  maxEarthHealth: 15
   Score: 0
-  ScoreIncreasePerSecond: 10
+  ScoreIncreasePerSecond: 1
   resetPanel: {fileID: 511430687}
 --- !u!4 &1236949201
 Transform:
