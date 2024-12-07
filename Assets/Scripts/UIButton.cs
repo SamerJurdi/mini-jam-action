@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class UIButton : MonoBehaviour
 {
     public Camera mC;
+    public Renderer HoverGraphic;
     public float leftMostCollision;
     public float rightMostCollision;
     public float highestMostCollision;
@@ -20,16 +21,22 @@ public class UIButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
             float mousePosX = mC.ScreenToWorldPoint(Input.mousePosition).x;
             float mousePosY = mC.ScreenToWorldPoint(Input.mousePosition).y;
             if ((mousePosX > leftMostCollision && mousePosX < rightMostCollision) && (mousePosY > lowestMostCollision && mousePosY < highestMostCollision))
             {
                 // within the boundaries when clicked
-                ActivateButton();
+                HoverGraphic.enabled = true;
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    ActivateButton();
+                }
             }
-        }
+            else
+            {
+                HoverGraphic.enabled = false;
+            }
+
     }
 
     void ActivateButton()
