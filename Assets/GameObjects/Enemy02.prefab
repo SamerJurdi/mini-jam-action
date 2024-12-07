@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a129bb57d9166144c8fc6a43b12dcafc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mySpeed: 4
+  mySpeed: 1
   LaserPrefab: {fileID: 6508633716891465541, guid: a01646b9ab57e954587831d9138806f8, type: 3}
   ShotInterval: 2.5
   ShotSpeed: -9
