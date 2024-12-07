@@ -77,6 +77,74 @@ public class GameManager : MonoBehaviour
                 enemyShipType = 0;
             else if (timePassed < 40)
                 enemyShipType = 1;
+            else if (timePassed < 60)
+            {
+                if (Random.Range(0,100f) < 88f)
+                    enemyShipType = 0;
+                else
+                    enemyShipType = 1;
+                intervalBetweenSpawns = 5f;
+            }
+            else if (timePassed < 80)
+            {
+                if (Random.Range(0, 100f) < 85f)
+                    enemyShipType = 0;
+                else
+                    enemyShipType = 1;
+                intervalBetweenSpawns = 1.5f;
+            }
+            else if (timePassed < 100)
+            {
+                if (Random.Range(0, 100f) < 85f)
+                    enemyShipType = 0;
+                else
+                    enemyShipType = 1;
+                intervalBetweenSpawns = 5f;
+            }
+            else if (timePassed < 120)
+            {
+                    enemyShipType = 0;
+                intervalBetweenSpawns = 1.2f;
+            }
+            else if (timePassed < 140)
+            {
+                    enemyShipType = 0;
+                intervalBetweenSpawns = 2.5f;
+            }
+            else if (timePassed < 160)
+            {
+                if (Random.Range(0, 100f) < 80f)
+                    enemyShipType = 0;
+                else
+                    enemyShipType = 1;
+                intervalBetweenSpawns = 2.5f;
+            }
+            else if (timePassed < 180)
+            {
+                if (Random.Range(0, 100f) < 85f)
+                    enemyShipType = 0;
+                else
+                    enemyShipType = 1;
+                intervalBetweenSpawns = 2.2f;
+            }
+            else if (timePassed < 200)
+            {
+                enemyShipType = 1;
+                intervalBetweenSpawns = 2.8f;
+            }
+            else if (timePassed < 220)
+            {
+                if (Random.Range(0, 100f) < 80f)
+                    enemyShipType = 0;
+                else
+                    enemyShipType = 1;
+                intervalBetweenSpawns = 4.5f;
+            }
+            else if (timePassed < 240)
+            {
+                enemyShipType = 0;
+                intervalBetweenSpawns = 2.3f;
+            }
             else
                 enemyShipType = Mathf.FloorToInt(Random.Range(0, 1.99f));
             
