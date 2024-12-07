@@ -4,14 +4,24 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
+    public static MusicManager MM;
     AudioSource mySpeaker;
     //[Header("Music")]
     //public List<AudioClip> musicList = new List<AudioClip>();
     // Start is called before the first frame update
     void Start()
     {
-        mySpeaker = GetComponent<AudioSource>();
-        DontDestroyOnLoad(this.gameObject);
+        if (MusicManager.MM == null)
+        {
+            MusicManager.MM = this;
+            mySpeaker = GetComponent<AudioSource>();
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Debug.Log("An extra version of music manager exists. Please make sure Music manager only exists one time.");
+            Destroy(gameObject);
+        }    
     }
 
     // Update is called once per frame
