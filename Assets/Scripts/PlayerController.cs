@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public GameObject laserPrefab;
     public Transform laserSpawnPoint;
     public float laserSpeed = 20f;
+    public GameObject LaserImpactPrefab;
 
     void Start()
     {
@@ -74,6 +75,9 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("EnemyLaser") || collision.gameObject.CompareTag("Enemy"))
         {
+            // destroy that laser and spawn in laser impact VFX
+            Destroy(collision.gameObject);
+            Instantiate(LaserImpactPrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, 0.0f), Quaternion.identity);
             HandleEnemyCollision();
         }
     }

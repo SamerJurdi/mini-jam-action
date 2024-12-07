@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     public float ShotSpeed;
     public float ShotSpawningDistanceY;
     public int earthDamage = 1;
+    public GameObject LaserImpactPrefab;
 
     void Start()
     {
@@ -33,6 +34,10 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("PlayerLaser") || collision.gameObject.CompareTag("Player"))
         {
+            //Destroy Laser
+            Destroy(collision.gameObject);
+            Instantiate(LaserImpactPrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, 0.0f), Quaternion.identity);
+
             CleanUpAndDestroy();
         }
     }

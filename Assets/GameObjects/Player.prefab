@@ -139,6 +139,7 @@ MonoBehaviour:
   laserPrefab: {fileID: 6508633716891465541, guid: 49b1bba4c9ff2b34f819382a85d5aa1e, type: 3}
   laserSpawnPoint: {fileID: 1349513631374210527}
   laserSpeed: 20
+  LaserImpactPrefab: {fileID: 6439710918646609920, guid: a9b7c5211cd2eeb4b82d570e670b4b0c, type: 3}
 --- !u!50 &2042667564039313069
 Rigidbody2D:
   serializedVersion: 4
