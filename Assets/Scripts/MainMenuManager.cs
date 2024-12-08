@@ -11,13 +11,13 @@ public class MainMenuManager : MonoBehaviour
         // Check if any key is pressed
         if (Input.anyKeyDown)
         {
-            PlayGame();
+           // PlayGame();
         }
 
         // Check if any mouse button is clicked (left, right, or middle)
         if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2))
         {
-            PlayGame();
+          //  PlayGame();
         }
     }
 
