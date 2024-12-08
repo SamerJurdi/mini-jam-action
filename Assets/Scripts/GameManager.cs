@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
     public GameObject resetPanel;
     public AudioClip gameMusicRef;
     public AudioClip deathMusicRef;
+    public GameObject playOnAwakeRef;
 
     void Start()
     {
@@ -276,5 +277,13 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("GameScene");
+    }
+
+    public void PlaySound(AudioClip clipToPlay)
+    {
+        GameObject temp = Instantiate(playOnAwakeRef, transform.position, Quaternion.identity);
+        AudioSource tempAudioSource = temp.GetComponent<AudioSource>();
+        tempAudioSource.clip = clipToPlay;
+        tempAudioSource.Play();
     }
 }
