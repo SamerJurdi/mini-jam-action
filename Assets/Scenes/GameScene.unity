@@ -1160,9 +1160,9 @@ MonoBehaviour:
   maxIntervalBetweenSpawns: 3
   minIntervalBetweenSpawns: 1
   maxIntervalTime: 60
-  SpawnPositionY: 10
-  SpawnPositionMinX: -5
-  SpawnPositionMaxX: 5
+  SpawnPositionY: 7
+  SpawnPositionMinX: -7
+  SpawnPositionMaxX: 7
   DestroyPositionY: -5
   maxEarthHealth: 15
   Score: 0

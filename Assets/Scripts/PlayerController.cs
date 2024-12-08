@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
         }
         if (collidedObj.CompareTag("Enemy") && isPlayerActive)
         {
-            collidedObj.GetComponent<Enemy>().CleanUpAndDestroy(false);
+            collidedObj.GetComponent<Enemy>().DestroyWithEffect();
             HandleEnemyCollision();
         }
         if (collidedObj.CompareTag("HealthPickup"))

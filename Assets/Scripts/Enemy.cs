@@ -66,15 +66,15 @@ public class Enemy : MonoBehaviour
             if (shipHealth <= 0)
             {
                 GameManager.GM.AddScore(ScoreValue);
-                CleanUpAndDestroy(false);
+                DestroyWithEffect();
             }
         }
     }
 
-    public void CleanUpAndDestroy(bool hideSFX)
+    public void DestroyWithEffect(bool withFX = true)
     {
         Debug.Log("Destroying Enemy");
-        if (!hideSFX)
+        if (withFX)
         {
             Instantiate(ShipDeathVFXPrefab, new Vector3(transform.position.x, transform.position.y, 0.0f), Quaternion.identity);
             if(Random.Range(0,1f) < chanceToDropHealthPickupOnDeath)
