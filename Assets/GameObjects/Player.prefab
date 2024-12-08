@@ -142,7 +142,7 @@ MonoBehaviour:
   laserSpawnPoint: {fileID: 1349513631374210527}
   laserSpeed: 20
   missilePrefab: {fileID: 4940029667536968389, guid: ecb099f062ee4f84c87d82bc8cfde145, type: 3}
-  missileSpeed: 20
+  missileSpeed: 5
   LaserImpactPrefab: {fileID: 6439710918646609920, guid: a9b7c5211cd2eeb4b82d570e670b4b0c, type: 3}
   ShipDeathVFXPrefab: {fileID: 7702660859116360410, guid: cc0df04cfdc593d419c4e41d89c101a2, type: 3}
 --- !u!50 &2042667564039313069
