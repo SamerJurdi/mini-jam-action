@@ -33,10 +33,11 @@ public class MusicManager : MonoBehaviour
             Application.Quit();
         }
     }
-    public void PlayMusic(AudioClip musicClip, bool loopMusic = true)
+    public void PlayMusic(AudioClip musicClip,float volume = 1f, bool loopMusic = true)
     {
         mySpeaker.clip = musicClip;
         mySpeaker.loop = loopMusic;
+        mySpeaker.volume = volume;
         mySpeaker.Play();
     }
 }
