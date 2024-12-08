@@ -399,7 +399,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &511430688
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1150,7 +1150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 2289484584251459557, guid: 2e990a6aae2a65f4a9687a06917d30f2, type: 3}
-  playerStartPos: {x: 0, y: -10}
+  playerStartPos: {x: 0, y: -6}
   playerFinalPos: {x: 0, y: -3}
   playerAscendSpeed: 2
   respawnCooldown: 3
