@@ -17,8 +17,8 @@ public class Enemy : MonoBehaviour
     public int ScoreValue = 100;
     public GameObject LaserImpactPrefab;
     public GameObject ShipDeathVFXPrefab;
-    public GameObject HealthPickupPrefab;
-    public float chanceToDropHealthPickupOnDeath;
+    public List<GameObject> pickupsPrefab;
+    public float chanceToDropPickupOnDeath;
     public SpriteRenderer myGFX;
     private float spawnTimeStamp;
     private float lastDamagedTimeStamp;
@@ -52,14 +52,21 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("PlayerLaser"))
+        if (collision.gameObject.CompareTag("PlayerLaser") || collision.gameObject.CompareTag("PlayerSuperLaser"))
         {
             // take damage
-            shipHealth--;
+            if (collision.gameObject.CompareTag("PlayerSuperLaser"))
+                shipHealth = 0;
+            else
+                shipHealth--;
+
             lastDamagedTimeStamp = Time.time;
             //Destroy Laser
-            Destroy(collision.gameObject);
-            Instantiate(LaserImpactPrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, 0.0f), collision.transform.rotation);
+            if (!collision.gameObject.CompareTag("PlayerSuperLaser"))
+            {
+                Destroy(collision.gameObject);
+                Instantiate(LaserImpactPrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, 0.0f), collision.transform.rotation);
+            }
 
 
             // if out of health, blow up ship
@@ -77,9 +84,13 @@ public class Enemy : MonoBehaviour
         if (withFX)
         {
             Instantiate(ShipDeathVFXPrefab, new Vector3(transform.position.x, transform.position.y, 0.0f), Quaternion.identity);
-            if(Random.Range(0,1f) < chanceToDropHealthPickupOnDeath)
+            if(Random.Range(0,1f) < chanceToDropPickupOnDeath)
             {
-                GameObject temp = Instantiate(HealthPickupPrefab, new Vector3(transform.position.x, transform.position.y, 0.0f), Quaternion.identity);
+                int pickupIndex = 0;
+                if (Random.Range(0, 1f) < 75f)
+                    pickupIndex = 1;
+
+                GameObject temp = Instantiate(pickupsPrefab[pickupIndex], new Vector3(transform.position.x, transform.position.y, 0.0f), Quaternion.identity);
                 temp.GetComponent<Rigidbody2D>().velocity = myRBody.velocity;
             }
         }

@@ -23,8 +23,11 @@ public class PlayerController : MonoBehaviour
     public GameObject laserPrefab;
     public Transform laserSpawnPoint;
     public float laserSpeed = 20f;
+    public GameObject missilePrefab;
+    public float missileSpeed = 20f;
     public GameObject LaserImpactPrefab;
     public GameObject ShipDeathVFXPrefab;
+    private bool hasMissile = true;
 
     void Start()
     {
@@ -69,6 +72,11 @@ public class PlayerController : MonoBehaviour
         if (collidedObj.CompareTag("HealthPickup"))
         {
             GameManager.GM.HealEarth(1);
+            Destroy(collidedObj);
+        }
+        if (collidedObj.CompareTag("MissilePickup"))
+        {
+            hasMissile = true;
             Destroy(collidedObj);
         }
     }
@@ -117,6 +125,10 @@ public class PlayerController : MonoBehaviour
         {
             ShootLaser();
         }
+        if (Input.GetKeyDown(KeyCode.C) && hasMissile)
+        {
+            ShootMissile();
+        }
     }
 
     private void ShootLaser()
@@ -129,6 +141,20 @@ public class PlayerController : MonoBehaviour
             {
                 laserRb.velocity = transform.up * laserSpeed;
             }
+        }
+    }
+
+    private void ShootMissile()
+    {
+        if (missilePrefab != null && laserSpawnPoint != null)
+        {
+            GameObject laser = Instantiate(missilePrefab, laserSpawnPoint.position, transform.rotation);
+            Rigidbody2D laserRb = laser.GetComponent<Rigidbody2D>();
+            if (laserRb != null)
+            {
+                laserRb.velocity = transform.up * missileSpeed;
+            }
+            hasMissile = false;
         }
     }
 }

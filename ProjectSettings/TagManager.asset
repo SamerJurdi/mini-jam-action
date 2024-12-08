@@ -8,6 +8,7 @@ TagManager:
   - EnemyLaser
   - PlayerLaser
   - HealthPickup
+  - PlayerSuperLaser
   layers:
   - Default
   - TransparentFX
