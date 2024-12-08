@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
                 enemyShipType = 1;
             else if (timePassed < 50)
             {
-                if (Random.Range(0,100f) < 88f)
+                if (Random.Range(0,100f) < 75f)
                     enemyShipType = 0;
                 else
                     enemyShipType = 1;
@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
             }
             else if (timePassed < 80)
             {
-                if (Random.Range(0, 100f) < 85f)
+                if (Random.Range(0, 100f) < 80f)
                     enemyShipType = 0;
                 else
                     enemyShipType = 1;
@@ -96,7 +96,7 @@ public class GameManager : MonoBehaviour
             }
             else if (timePassed < 90)
             {
-                if (Random.Range(0, 100f) < 85f)
+                if (Random.Range(0, 100f) < 80f)
                     enemyShipType = 0;
                 else
                     enemyShipType = 1;
@@ -114,7 +114,7 @@ public class GameManager : MonoBehaviour
             }
             else if (timePassed < 160)
             {
-                if (Random.Range(0, 100f) < 80f)
+                if (Random.Range(0, 100f) < 75f)
                     enemyShipType = 0;
                 else
                     enemyShipType = 1;
@@ -122,7 +122,7 @@ public class GameManager : MonoBehaviour
             }
             else if (timePassed < 180)
             {
-                if (Random.Range(0, 100f) < 85f)
+                if (Random.Range(0, 100f) < 80f)
                     enemyShipType = 0;
                 else
                     enemyShipType = 1;
@@ -135,7 +135,7 @@ public class GameManager : MonoBehaviour
             }
             else if (timePassed < 210)
             {
-                if (Random.Range(0, 100f) < 80f)
+                if (Random.Range(0, 100f) < 75f)
                     enemyShipType = 0;
                 else
                     enemyShipType = 1;
