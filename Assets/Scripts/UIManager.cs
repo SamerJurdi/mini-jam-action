@@ -10,6 +10,8 @@ public class UIManager : MonoBehaviour
     private RectTransform hbTransform;
     [Header("Score")]
     public TextMeshProUGUI score;
+    [Header("Score")]
+    public GameObject missileInStockUI;
 
     // Start is called before the first frame update
     void Start()
@@ -25,5 +27,10 @@ public class UIManager : MonoBehaviour
         hbCurrentSize.x = hbMaxWidth * GameManager.GM.GetEarthHealth();
         hbTransform.sizeDelta = hbCurrentSize;
         score.text = "" + GameManager.GM.Score;
+    }
+
+    public void ToggleMissileIcon(bool showMissileInStockUI)
+    {
+        missileInStockUI.SetActive(showMissileInStockUI);
     }
 }

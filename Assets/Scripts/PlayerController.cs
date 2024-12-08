@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Managed by the game manager to give immunity on spawn")]
     public bool isPlayerActive = true;
     private GameManager gameManager;
+    private UIManager uiManager;
+
     [Header("Player Movement")]
     public float moveSpeed = 5f;
     public float tiltAngle = 45f;
@@ -27,12 +29,14 @@ public class PlayerController : MonoBehaviour
     public float missileSpeed = 20f;
     public GameObject LaserImpactPrefab;
     public GameObject ShipDeathVFXPrefab;
-    private bool hasMissile = true;
+    public bool hasMissile = true;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         gameManager = GameObject.FindWithTag("GameController").GetComponent<GameManager>();
+        uiManager = GameObject.FindWithTag("UIController").GetComponent<UIManager>();
+        setMissileInStock(hasMissile);
     }
 
     void Update()
@@ -76,7 +80,7 @@ public class PlayerController : MonoBehaviour
         }
         if (collidedObj.CompareTag("MissilePickup"))
         {
-            hasMissile = true;
+            setMissileInStock(true);
             Destroy(collidedObj);
         }
     }
@@ -155,7 +159,13 @@ public class PlayerController : MonoBehaviour
             {
                 laserRb.velocity = transform.up * missileSpeed;
             }
-            hasMissile = false;
+            setMissileInStock(false);
         }
+    }
+
+    private void setMissileInStock(bool inStock)
+    {
+        hasMissile = inStock;
+        uiManager.ToggleMissileIcon(inStock);
     }
 }

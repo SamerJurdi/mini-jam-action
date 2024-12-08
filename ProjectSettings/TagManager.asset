@@ -9,6 +9,8 @@ TagManager:
   - PlayerLaser
   - HealthPickup
   - PlayerSuperLaser
+  - MissilePickup
+  - UIController
   layers:
   - Default
   - TransparentFX
