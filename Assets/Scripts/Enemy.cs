@@ -52,14 +52,21 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("PlayerLaser"))
+        if (collision.gameObject.CompareTag("PlayerLaser") || collision.gameObject.CompareTag("PlayerSuperLaser"))
         {
             // take damage
-            shipHealth--;
+            if (collision.gameObject.CompareTag("PlayerSuperLaser"))
+                shipHealth = 0;
+            else
+                shipHealth--;
+
             lastDamagedTimeStamp = Time.time;
             //Destroy Laser
-            Destroy(collision.gameObject);
-            Instantiate(LaserImpactPrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, 0.0f), collision.transform.rotation);
+            if (!collision.gameObject.CompareTag("PlayerSuperLaser"))
+            {
+                Destroy(collision.gameObject);
+                Instantiate(LaserImpactPrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, 0.0f), collision.transform.rotation);
+            }
 
 
             // if out of health, blow up ship
