@@ -118,6 +118,10 @@ PrefabInstance:
       propertyPath: m_Pitch
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: -8505506703583474631, guid: 49b1bba4c9ff2b34f819382a85d5aa1e, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f8892f12b8ae65341b71c16579d64138, type: 3}
     - target: {fileID: 4515221363220109108, guid: 49b1bba4c9ff2b34f819382a85d5aa1e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.1896884
