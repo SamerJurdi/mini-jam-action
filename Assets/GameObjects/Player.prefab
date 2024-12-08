@@ -138,6 +138,8 @@ MonoBehaviour:
   tiltAngle: 15
   maxY: -2
   minY: -4.5
+  maxX: 7
+  minX: -7
   laserPrefab: {fileID: 6508633716891465541, guid: 49b1bba4c9ff2b34f819382a85d5aa1e, type: 3}
   laserSpawnPoint: {fileID: 1349513631374210527}
   laserSpeed: 20
