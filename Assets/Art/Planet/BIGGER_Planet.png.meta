@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 75
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -114,9 +114,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1504.5
+        y: 13529.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2bf26656f5d42d47bb57437ff33976f
-      internalID: -2031627061
+      spriteID: c4408c36b9237db43affafd57d6ef3ba
+      internalID: -1244774001
       vertices: []
       indices: 
       edges: []
@@ -135,9 +135,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1503
-        y: 1504.5
+        y: 13529.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d031dbdc0b03531469f75f9fe68a5157
-      internalID: -270231975
+      spriteID: a4dec90fc41332748913dc453431a0dc
+      internalID: -1730747499
       vertices: []
       indices: 
       edges: []
@@ -156,9 +156,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3006
-        y: 1504.5
+        y: 13529.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9180fd9f2d474f045a6ed82e1c8f9cd1
-      internalID: 223073399
+      spriteID: c8c81f5dc04a35f48a283f8d301256d3
+      internalID: 1545217051
       vertices: []
       indices: 
       edges: []
@@ -177,9 +177,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4509
-        y: 1504.5
+        y: 13529.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91a78fa9d753f0c418fba9d6a36569ee
-      internalID: -1563769921
+      spriteID: cde05999b5fc30f4e8318d4077c876c1
+      internalID: -1637566794
       vertices: []
       indices: 
       edges: []
@@ -198,9 +198,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6012
-        y: 1504.5
+        y: 13529.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cae94bf35e92c6e4fbac4afc24bf92af
-      internalID: 950893104
+      spriteID: 3ff32ed599cc3304fb9b9b2c9064a153
+      internalID: 1904915772
       vertices: []
       indices: 
       edges: []
@@ -219,9 +219,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7515
-        y: 1504.5
+        y: 13529.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd1e2fc2ee5cae74494c5a374fb1cc23
-      internalID: 252789762
+      spriteID: e5e0e0dda2bcd3f469222b6d98a9d94b
+      internalID: -1074312725
       vertices: []
       indices: 
       edges: []
@@ -240,9 +240,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 9018
-        y: 1504.5
+        y: 13529.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,8 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d8ec8c2bc785f6429c83581f58039ad
-      internalID: 1659012908
+      spriteID: 6293d9403740c884d9c34adc54335323
+      internalID: -1277901615
       vertices: []
       indices: 
       edges: []
@@ -261,9 +261,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 10521
-        y: 1504.5
+        y: 13529.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e69a6c2355cac64abfbebbda20d5477
-      internalID: 1296168526
+      spriteID: 911946ea923bc8747a9baa3778e8a9e9
+      internalID: -1111380072
       vertices: []
       indices: 
       edges: []
@@ -282,9 +282,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 12024
-        y: 1504.5
+        y: 13529.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,8 +292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7844e258ae29ff440b91b627812c5659
-      internalID: 412849137
+      spriteID: 401c178f122da5e46b175f74d00e61ab
+      internalID: 413075574
       vertices: []
       indices: 
       edges: []
@@ -303,9 +303,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 13527
-        y: 1504.5
+        y: 13529.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,8 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ca124b052299a347a407989c66888c3
-      internalID: 891082014
+      spriteID: 4f5ec9285c505f1468ed2928681f26a5
+      internalID: -171598295
       vertices: []
       indices: 
       edges: []
@@ -324,9 +324,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0.5
+        y: 12026.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,8 +334,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a088a6ffa936f54fa1d7eeca4c461d8
-      internalID: 1325581360
+      spriteID: ed57185a7f7488347be03ca8b47ef3d1
+      internalID: 825171977
       vertices: []
       indices: 
       edges: []
@@ -345,9 +345,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1503
-        y: 0.5
+        y: 12026.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,8 +355,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d44b126b7b50794eab1dafb889c0d53
-      internalID: 1710801649
+      spriteID: a9b5e76987af5be43851495c7db17733
+      internalID: 1608979962
       vertices: []
       indices: 
       edges: []
@@ -366,9 +366,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3006
-        y: 0.5
+        y: 12026.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0da698dbb9dc63f4f944b45ba2696a6c
-      internalID: -1700032646
+      spriteID: 81da8ecb99f81d84a80a326ca778b141
+      internalID: 35540225
       vertices: []
       indices: 
       edges: []
@@ -387,9 +387,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4509
-        y: 0.5
+        y: 12026.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,8 +397,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fbae1333a124ac4da2c962fd0faf086
-      internalID: -168821366
+      spriteID: d12f8204f0cf929479eadd7c1164ab83
+      internalID: -1464352700
       vertices: []
       indices: 
       edges: []
@@ -408,9 +408,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6012
-        y: 0.5
+        y: 12026.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,8 +418,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4403a291e18caf343b0a4b0c8e2bda2e
-      internalID: 1217283061
+      spriteID: ae5c27eb8eaab2b4183fb3d1b4d403a2
+      internalID: -459494676
       vertices: []
       indices: 
       edges: []
@@ -429,9 +429,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7515
-        y: 0.5
+        y: 12026.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,8 +439,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e55eae656198a924a95bb03554822351
-      internalID: -2135565369
+      spriteID: 53ce2afbbbacd1f4b9a8c898e620569d
+      internalID: -30413013
       vertices: []
       indices: 
       edges: []
@@ -450,9 +450,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 9018
-        y: 0.5
+        y: 12026.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -460,8 +460,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef1cb744eb91e634eaba89a6b4d5998c
-      internalID: 1897772693
+      spriteID: 16eedf633881c1943ab571b30e9d1c73
+      internalID: -185837743
       vertices: []
       indices: 
       edges: []
@@ -471,9 +471,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 10521
-        y: 0.5
+        y: 12026.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,8 +481,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45ece099d6add3942b8b88565ed05727
-      internalID: 945554590
+      spriteID: 772883a4ccdde4f4181c3cd29fa58fb6
+      internalID: 2126660651
       vertices: []
       indices: 
       edges: []
@@ -492,9 +492,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 12024
-        y: 0.5
+        y: 12026.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,8 +502,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7ab3f42b6e24764c80de2178cfd999e
-      internalID: 74250348
+      spriteID: befe280d8a937fd479b89cd757b0460e
+      internalID: 718257385
       vertices: []
       indices: 
       edges: []
@@ -513,9 +513,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 13527
-        y: 0.5
+        y: 12026.7
         width: 1503.3
-        height: 1504.5
+        height: 1503.3
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -523,8 +523,1688 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4c331553038d5e42a08b7a6cc0bfb35
-      internalID: 855053935
+      spriteID: c57d04f80404e5a409aa9dd0a269f23d
+      internalID: 1519954262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10523.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a676e7d5efc4fcf4182485a26b9fceb2
+      internalID: -314821953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_21
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 10523.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b204d754390834b8e2b9df3a7385ee
+      internalID: -480955417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_22
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 10523.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e766546382b582428edc9dd249b5ec9
+      internalID: -467100487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_23
+      rect:
+        serializedVersion: 2
+        x: 4509
+        y: 10523.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafe71993f598a14b9c80e3f9b1da47f
+      internalID: 721711115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_24
+      rect:
+        serializedVersion: 2
+        x: 6012
+        y: 10523.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1114f65d6638d9c429e119d61c6e99fa
+      internalID: 1197820488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_25
+      rect:
+        serializedVersion: 2
+        x: 7515
+        y: 10523.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7876c4c34dbdcd141894d7fc27f70296
+      internalID: -872805336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_26
+      rect:
+        serializedVersion: 2
+        x: 9018
+        y: 10523.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1893cc010a8c0a44eb2d459244e7863e
+      internalID: -1202615217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_27
+      rect:
+        serializedVersion: 2
+        x: 10521
+        y: 10523.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b0565be8a828a40b4975098f61865e
+      internalID: 259829646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_28
+      rect:
+        serializedVersion: 2
+        x: 12024
+        y: 10523.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22abd885588da9048b356f28480952b0
+      internalID: 119801227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_29
+      rect:
+        serializedVersion: 2
+        x: 13527
+        y: 10523.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2278a805eab82e34c9e4eb084c6d84d8
+      internalID: -485608836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9020.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f932a54f504d74ebdf6403dda85d8b
+      internalID: -1444831403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_31
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 9020.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87652a20631e7964db6d08db91b8b181
+      internalID: 313611638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_32
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 9020.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3724deb7009ce6f4aa42173126c81bc2
+      internalID: 232400815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_33
+      rect:
+        serializedVersion: 2
+        x: 4509
+        y: 9020.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4389d302c78e19041926052075242077
+      internalID: -1615938430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_34
+      rect:
+        serializedVersion: 2
+        x: 6012
+        y: 9020.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85d458299a8c4245a13652ef4e2a5b1
+      internalID: -1213227967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_35
+      rect:
+        serializedVersion: 2
+        x: 7515
+        y: 9020.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4999ed4324b1c54bbf946d56dc8f33c
+      internalID: -395759501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_36
+      rect:
+        serializedVersion: 2
+        x: 9018
+        y: 9020.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c93c02fc51dc9c4da70a998f509bcc0
+      internalID: 104238427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_37
+      rect:
+        serializedVersion: 2
+        x: 10521
+        y: 9020.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e3d3df98c07714b96226464ceffb00
+      internalID: 1565406395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_38
+      rect:
+        serializedVersion: 2
+        x: 12024
+        y: 9020.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804994816e085e944b1cf01e4a6b2aed
+      internalID: -59612098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_39
+      rect:
+        serializedVersion: 2
+        x: 13527
+        y: 9020.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794e25bc7dbbf8b4f88c8b3574c19390
+      internalID: -234719584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7517.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d64cab40029674281b593bd06e40d7
+      internalID: -387030124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_41
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 7517.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d03693d96ad7544dabd87049d278aa1
+      internalID: -1375777624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_42
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 7517.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd01679d2318c04fb1ff0288a80ccfa
+      internalID: -1640658741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_43
+      rect:
+        serializedVersion: 2
+        x: 4509
+        y: 7517.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03250eb4bd9ec8e499644a80e678b1c9
+      internalID: -1922070192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_44
+      rect:
+        serializedVersion: 2
+        x: 6012
+        y: 7517.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742b54d0900c0b7468cfce14734659c4
+      internalID: -950202805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_45
+      rect:
+        serializedVersion: 2
+        x: 7515
+        y: 7517.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b361612b1fbff734d8d9ffa3cd20b9bf
+      internalID: 94147107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_46
+      rect:
+        serializedVersion: 2
+        x: 9018
+        y: 7517.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717aa83efe39f5345ae79befaefd10fd
+      internalID: 1466769399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_47
+      rect:
+        serializedVersion: 2
+        x: 10521
+        y: 7517.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480e075e14b030b4d9903161267d8e23
+      internalID: -143930082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_48
+      rect:
+        serializedVersion: 2
+        x: 12024
+        y: 7517.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba16ccacbade1bb40aa0bafa640ac707
+      internalID: -688919486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_49
+      rect:
+        serializedVersion: 2
+        x: 13527
+        y: 7517.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667044fd556e6aa47ba03a4e5b7378aa
+      internalID: 602348765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6014.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a191d18b2001441b3bad40112d5d8f
+      internalID: -893165018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_51
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 6014.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52703bca6b0def6458d28781e75cb82d
+      internalID: -402511768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_52
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 6014.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52bccd44d2ad3f4f8e0a9c1e10635da
+      internalID: -1331121473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_53
+      rect:
+        serializedVersion: 2
+        x: 4509
+        y: 6014.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7562629d476d4394daaade1e9e6fc5dc
+      internalID: -1065630513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_54
+      rect:
+        serializedVersion: 2
+        x: 6012
+        y: 6014.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba21bd7807d7eb841ab4c12ff9a79b4e
+      internalID: -664704043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_55
+      rect:
+        serializedVersion: 2
+        x: 7515
+        y: 6014.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59aaa5de8142a9142a6e8617a1f59b87
+      internalID: 949758449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_56
+      rect:
+        serializedVersion: 2
+        x: 9018
+        y: 6014.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a702ea97a7ed5cf44af2807459554c10
+      internalID: -1938906615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_57
+      rect:
+        serializedVersion: 2
+        x: 10521
+        y: 6014.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a2c8b2e59cbda4cb999a1414fd9c4e
+      internalID: 287242226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_58
+      rect:
+        serializedVersion: 2
+        x: 12024
+        y: 6014.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e47a6c331317e4408dbbed90e2244d4
+      internalID: 1343238309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_59
+      rect:
+        serializedVersion: 2
+        x: 13527
+        y: 6014.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c5f8d6d81f2e041a7a3ef7909279e7
+      internalID: 1929434629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4511.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d01e39ed5133242b68ade223cef88f
+      internalID: 1251126827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_61
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 4511.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639358244b7331f45b32a7c65a813753
+      internalID: 1864633070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_62
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 4511.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e21fdfd39fc5294798108540b15a0e3
+      internalID: 1023229190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_63
+      rect:
+        serializedVersion: 2
+        x: 4509
+        y: 4511.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8b9287968c7554482dbacd00dc7568
+      internalID: -1571586024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_64
+      rect:
+        serializedVersion: 2
+        x: 6012
+        y: 4511.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4256bd0242dcedd4ca6a6f37ea5cdc07
+      internalID: -396133054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_65
+      rect:
+        serializedVersion: 2
+        x: 7515
+        y: 4511.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee70e40b2b64c0498d8c9f6ff9fce94
+      internalID: -757210802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_66
+      rect:
+        serializedVersion: 2
+        x: 9018
+        y: 4511.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a0b68ab8c66b94baf818e13d4ece07
+      internalID: 291715184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_67
+      rect:
+        serializedVersion: 2
+        x: 10521
+        y: 4511.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18465c8fc493bf48969ffcaf424de50
+      internalID: -985331962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_68
+      rect:
+        serializedVersion: 2
+        x: 12024
+        y: 4511.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dcab9940e4e34546be9b3d17033de3c
+      internalID: -489212073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_69
+      rect:
+        serializedVersion: 2
+        x: 13527
+        y: 4511.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d60901077a3754eacccbd0b9bd4950
+      internalID: 2082998907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3008.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9994571137385ed41944d7c41b38af13
+      internalID: -1637859502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_71
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 3008.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5dd426e543d78c46b89bd19e5faa493
+      internalID: -907929113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_72
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 3008.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a9b7f10b3fd5e499970c0c647f4920
+      internalID: 362851913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_73
+      rect:
+        serializedVersion: 2
+        x: 4509
+        y: 3008.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23c9c0e3ab6160458cc348cde354c66
+      internalID: 832750444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_74
+      rect:
+        serializedVersion: 2
+        x: 6012
+        y: 3008.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b443f34014112e341bd18f69ed4b63bc
+      internalID: 2074149125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_75
+      rect:
+        serializedVersion: 2
+        x: 7515
+        y: 3008.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5cdb979a09aec47b095f936be97c0b
+      internalID: -1738412411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_76
+      rect:
+        serializedVersion: 2
+        x: 9018
+        y: 3008.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e24cb6886a4434b94e838bf7bf9b35
+      internalID: -277423148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_77
+      rect:
+        serializedVersion: 2
+        x: 10521
+        y: 3008.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3858ee61892e8c3479d3b87db777325e
+      internalID: 299291183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_78
+      rect:
+        serializedVersion: 2
+        x: 12024
+        y: 3008.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5832986b0481e7429819d809ca4c0e1
+      internalID: -492963934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_79
+      rect:
+        serializedVersion: 2
+        x: 13527
+        y: 3008.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d033e9f637d049143ba014730c252f62
+      internalID: 899012845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1505.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961f0e93044d90845baec285e3437bb2
+      internalID: -688202134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_81
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 1505.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f8a8a0c1d05154694f6eed5db8c21b
+      internalID: -1437752764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_82
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 1505.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317a32afac1ef4c49b66e1b2afd6cef9
+      internalID: 1195071962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_83
+      rect:
+        serializedVersion: 2
+        x: 4509
+        y: 1505.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f00b1c6d009cd46be48ce36226359f
+      internalID: 1806189847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_84
+      rect:
+        serializedVersion: 2
+        x: 6012
+        y: 1505.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c33535ceb8923d40b7fe9a7fa486d3d
+      internalID: 1103371186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_85
+      rect:
+        serializedVersion: 2
+        x: 7515
+        y: 1505.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4694c3681477b8f4188789f0f92d4a0a
+      internalID: 1063917711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_86
+      rect:
+        serializedVersion: 2
+        x: 9018
+        y: 1505.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4035764f41980154aa81e1b0a9e1e929
+      internalID: 11855384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_87
+      rect:
+        serializedVersion: 2
+        x: 10521
+        y: 1505.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99533abfc6e26d44aa84a9c01c7a86ff
+      internalID: 689585010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_88
+      rect:
+        serializedVersion: 2
+        x: 12024
+        y: 1505.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c21f07721a06df4d8d1bc30f403bf82
+      internalID: 523879100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_89
+      rect:
+        serializedVersion: 2
+        x: 13527
+        y: 1505.7
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5875a613b106ed34fadd2050c9bfac7d
+      internalID: -1869693947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.6999512
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ead60e2bfb9b14d9b79bc55dbb73da
+      internalID: 910484586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_91
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 2.6999512
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2317bfdf53821794a81a51fba38005b6
+      internalID: 38899167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_92
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 2.6999512
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3929f46212e052245ab8d3df6bacccf4
+      internalID: -1008441079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_93
+      rect:
+        serializedVersion: 2
+        x: 4509
+        y: 2.6999512
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c13a3aa5dbd2aa439e5651fd3ec5455
+      internalID: 777330332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_94
+      rect:
+        serializedVersion: 2
+        x: 6012
+        y: 2.6999512
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d67e4920c67f341b544eb0c695c4a2
+      internalID: 206425237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_95
+      rect:
+        serializedVersion: 2
+        x: 7515
+        y: 2.6999512
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4171f4ec6dec7a4597a5ccb5d95c66b
+      internalID: -1143389333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_96
+      rect:
+        serializedVersion: 2
+        x: 9018
+        y: 2.6999512
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8582179acc746d54eb104f29f3cf854e
+      internalID: 1712056813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_97
+      rect:
+        serializedVersion: 2
+        x: 10521
+        y: 2.6999512
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1c2b631dcfbcf42b610b1b6e555f80
+      internalID: 680189530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_98
+      rect:
+        serializedVersion: 2
+        x: 12024
+        y: 2.6999512
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e60cf4fcbbba1bf47810cc633c16d465
+      internalID: -145879499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIGGER_Planet_99
+      rect:
+        serializedVersion: 2
+        x: 13527
+        y: 2.6999512
+        width: 1503.3
+        height: 1503.3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778f2a9a5daab6a49b7cdd306fe2d1b1
+      internalID: 60773893
       vertices: []
       indices: 
       edges: []
@@ -540,26 +2220,106 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BIGGER_Planet_0: -2031627061
-      BIGGER_Planet_1: -270231975
-      BIGGER_Planet_10: 1325581360
-      BIGGER_Planet_11: 1710801649
-      BIGGER_Planet_12: -1700032646
-      BIGGER_Planet_13: -168821366
-      BIGGER_Planet_14: 1217283061
-      BIGGER_Planet_15: -2135565369
-      BIGGER_Planet_16: 1897772693
-      BIGGER_Planet_17: 945554590
-      BIGGER_Planet_18: 74250348
-      BIGGER_Planet_19: 855053935
-      BIGGER_Planet_2: 223073399
-      BIGGER_Planet_3: -1563769921
-      BIGGER_Planet_4: 950893104
-      BIGGER_Planet_5: 252789762
-      BIGGER_Planet_6: 1659012908
-      BIGGER_Planet_7: 1296168526
-      BIGGER_Planet_8: 412849137
-      BIGGER_Planet_9: 891082014
+      BIGGER_Planet_0: -1244774001
+      BIGGER_Planet_1: -1730747499
+      BIGGER_Planet_10: 825171977
+      BIGGER_Planet_11: 1608979962
+      BIGGER_Planet_12: 35540225
+      BIGGER_Planet_13: -1464352700
+      BIGGER_Planet_14: -459494676
+      BIGGER_Planet_15: -30413013
+      BIGGER_Planet_16: -185837743
+      BIGGER_Planet_17: 2126660651
+      BIGGER_Planet_18: 718257385
+      BIGGER_Planet_19: 1519954262
+      BIGGER_Planet_2: 1545217051
+      BIGGER_Planet_20: -314821953
+      BIGGER_Planet_21: -480955417
+      BIGGER_Planet_22: -467100487
+      BIGGER_Planet_23: 721711115
+      BIGGER_Planet_24: 1197820488
+      BIGGER_Planet_25: -872805336
+      BIGGER_Planet_26: -1202615217
+      BIGGER_Planet_27: 259829646
+      BIGGER_Planet_28: 119801227
+      BIGGER_Planet_29: -485608836
+      BIGGER_Planet_3: -1637566794
+      BIGGER_Planet_30: -1444831403
+      BIGGER_Planet_31: 313611638
+      BIGGER_Planet_32: 232400815
+      BIGGER_Planet_33: -1615938430
+      BIGGER_Planet_34: -1213227967
+      BIGGER_Planet_35: -395759501
+      BIGGER_Planet_36: 104238427
+      BIGGER_Planet_37: 1565406395
+      BIGGER_Planet_38: -59612098
+      BIGGER_Planet_39: -234719584
+      BIGGER_Planet_4: 1904915772
+      BIGGER_Planet_40: -387030124
+      BIGGER_Planet_41: -1375777624
+      BIGGER_Planet_42: -1640658741
+      BIGGER_Planet_43: -1922070192
+      BIGGER_Planet_44: -950202805
+      BIGGER_Planet_45: 94147107
+      BIGGER_Planet_46: 1466769399
+      BIGGER_Planet_47: -143930082
+      BIGGER_Planet_48: -688919486
+      BIGGER_Planet_49: 602348765
+      BIGGER_Planet_5: -1074312725
+      BIGGER_Planet_50: -893165018
+      BIGGER_Planet_51: -402511768
+      BIGGER_Planet_52: -1331121473
+      BIGGER_Planet_53: -1065630513
+      BIGGER_Planet_54: -664704043
+      BIGGER_Planet_55: 949758449
+      BIGGER_Planet_56: -1938906615
+      BIGGER_Planet_57: 287242226
+      BIGGER_Planet_58: 1343238309
+      BIGGER_Planet_59: 1929434629
+      BIGGER_Planet_6: -1277901615
+      BIGGER_Planet_60: 1251126827
+      BIGGER_Planet_61: 1864633070
+      BIGGER_Planet_62: 1023229190
+      BIGGER_Planet_63: -1571586024
+      BIGGER_Planet_64: -396133054
+      BIGGER_Planet_65: -757210802
+      BIGGER_Planet_66: 291715184
+      BIGGER_Planet_67: -985331962
+      BIGGER_Planet_68: -489212073
+      BIGGER_Planet_69: 2082998907
+      BIGGER_Planet_7: -1111380072
+      BIGGER_Planet_70: -1637859502
+      BIGGER_Planet_71: -907929113
+      BIGGER_Planet_72: 362851913
+      BIGGER_Planet_73: 832750444
+      BIGGER_Planet_74: 2074149125
+      BIGGER_Planet_75: -1738412411
+      BIGGER_Planet_76: -277423148
+      BIGGER_Planet_77: 299291183
+      BIGGER_Planet_78: -492963934
+      BIGGER_Planet_79: 899012845
+      BIGGER_Planet_8: 413075574
+      BIGGER_Planet_80: -688202134
+      BIGGER_Planet_81: -1437752764
+      BIGGER_Planet_82: 1195071962
+      BIGGER_Planet_83: 1806189847
+      BIGGER_Planet_84: 1103371186
+      BIGGER_Planet_85: 1063917711
+      BIGGER_Planet_86: 11855384
+      BIGGER_Planet_87: 689585010
+      BIGGER_Planet_88: 523879100
+      BIGGER_Planet_89: -1869693947
+      BIGGER_Planet_9: -171598295
+      BIGGER_Planet_90: 910484586
+      BIGGER_Planet_91: 38899167
+      BIGGER_Planet_92: -1008441079
+      BIGGER_Planet_93: 777330332
+      BIGGER_Planet_94: 206425237
+      BIGGER_Planet_95: -1143389333
+      BIGGER_Planet_96: 1712056813
+      BIGGER_Planet_97: 680189530
+      BIGGER_Planet_98: -145879499
+      BIGGER_Planet_99: 60773893
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
