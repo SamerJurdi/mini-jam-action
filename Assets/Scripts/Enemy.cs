@@ -87,7 +87,7 @@ public class Enemy : MonoBehaviour
             if(Random.Range(0,1f) < chanceToDropPickupOnDeath)
             {
                 int pickupIndex = 0;
-                if (Random.Range(0, 1f) < 0.75f)
+                if (Random.Range(0, 100f) < 75f)
                     pickupIndex = 1;
 
                 GameObject temp = Instantiate(pickupsPrefab[pickupIndex], new Vector3(transform.position.x, transform.position.y, 0.0f), Quaternion.identity);
