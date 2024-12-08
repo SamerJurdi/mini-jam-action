@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 2457399838627037873}
   m_Layer: 0
   m_Name: MissilePickup
-  m_TagString: HealthPickup
+  m_TagString: MissilePickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
