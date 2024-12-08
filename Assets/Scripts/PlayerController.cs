@@ -121,13 +121,14 @@ public class PlayerController : MonoBehaviour
 
     private void HandleShooting()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Fire1"))
         {
             ShootLaser();
         }
-        if (Input.GetKeyDown(KeyCode.C) && hasMissile)
+        if (Input.GetButtonDown("Fire2"))
         {
-            ShootMissile();
+            if(hasMissile)
+                ShootMissile();
         }
     }
 
