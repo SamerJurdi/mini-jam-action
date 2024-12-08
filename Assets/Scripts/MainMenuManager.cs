@@ -8,6 +8,7 @@ public class MainMenuManager : MonoBehaviour
     public GameObject howToPlay;
     //public SpriteRenderer howToPlayImage;
     private bool isHowToPlayImageDisplaying = false;
+    private float howToPlayhidTimeStamp;
 
     void Start()
     {
@@ -41,15 +42,19 @@ public class MainMenuManager : MonoBehaviour
     // show how to play
     public void ShowHowToPlay()
     {
-        //howToPlayImage.SetEnabled(true);
-        howToPlay.transform.position = new Vector3(533, 333, 0);
-        isHowToPlayImageDisplaying = true;
+        if (Time.time - howToPlayhidTimeStamp > 0.2f)
+        {
+            //howToPlayImage.SetEnabled(true);
+            howToPlay.transform.position = new Vector3(533, 333, 0);
+            isHowToPlayImageDisplaying = true;
+        }
     }
     // show how to play
     public void HideHowToPlay()
     {
         //howToPlayImage.SetEnabled(false);
-        howToPlay.transform.position = new Vector3(100000f,0,0);
+        howToPlay.transform.position = new Vector3(100000f, 0, 0);
         isHowToPlayImageDisplaying = false;
+        howToPlayhidTimeStamp = Time.time;
     }
 }
