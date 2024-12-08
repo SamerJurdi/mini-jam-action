@@ -20,6 +20,10 @@ public class PlayerController : MonoBehaviour
     public float maxY = -2f;
     [Tooltip("Lower boundary in world units")]
     public float minY = -4.5f;
+    [Tooltip("Right boundary in world units")]
+    public float maxX = 8.8f;
+    [Tooltip("Left boundary in world units")]
+    public float minX = -8.8f;
 
     [Header("Shooting")]
     public GameObject laserPrefab;
@@ -117,6 +121,7 @@ public class PlayerController : MonoBehaviour
     private void EnforceBoundary()
     {
         Vector3 clampedPosition = transform.position;
+        clampedPosition.x = Mathf.Clamp(clampedPosition.x, minX, maxX);
         clampedPosition.y = Mathf.Clamp(clampedPosition.y, minY, maxY);
         transform.position = clampedPosition;
     }
