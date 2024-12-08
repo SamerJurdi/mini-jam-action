@@ -1269,7 +1269,7 @@ MonoBehaviour:
   resetPanel: {fileID: 511430687}
   gameMusicRef: {fileID: 8300000, guid: 351df217b8fe512489bc0f73a1ed0437, type: 3}
   deathMusicRef: {fileID: 8300000, guid: cdc558343c3f2e04798b27837f8dc9b5, type: 3}
-  playOnAwakeRef: {fileID: 0}
+  playOnAwakeRef: {fileID: 5086520556310819466, guid: ffbdda31931fd874980ed8f1dacb11b5, type: 3}
 --- !u!4 &1236949201
 Transform:
   m_ObjectHideFlags: 0

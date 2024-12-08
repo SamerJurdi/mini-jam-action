@@ -31,6 +31,10 @@ public class PlayerController : MonoBehaviour
     public GameObject ShipDeathVFXPrefab;
     public bool hasMissile = true;
 
+    [Header("Pickups")]
+    public AudioClip HealthPickupSound;
+    public AudioClip MissilePickupSound;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -75,11 +79,13 @@ public class PlayerController : MonoBehaviour
         }
         if (collidedObj.CompareTag("HealthPickup"))
         {
+            GameManager.GM.PlaySound(HealthPickupSound);
             GameManager.GM.HealEarth(1);
             Destroy(collidedObj);
         }
         if (collidedObj.CompareTag("MissilePickup"))
         {
+            GameManager.GM.PlaySound(MissilePickupSound);
             setMissileInStock(true);
             Destroy(collidedObj);
         }

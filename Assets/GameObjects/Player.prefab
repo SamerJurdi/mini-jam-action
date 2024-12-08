@@ -145,6 +145,9 @@ MonoBehaviour:
   missileSpeed: 5
   LaserImpactPrefab: {fileID: 6439710918646609920, guid: a9b7c5211cd2eeb4b82d570e670b4b0c, type: 3}
   ShipDeathVFXPrefab: {fileID: 7702660859116360410, guid: cc0df04cfdc593d419c4e41d89c101a2, type: 3}
+  hasMissile: 1
+  HealthPickupSound: {fileID: 8300000, guid: 1941d35f4af44e945b255cc80765ed7b, type: 3}
+  MissilePickupSound: {fileID: 8300000, guid: 35522447974c47140b0b4ec9689aff95, type: 3}
 --- !u!50 &2042667564039313069
 Rigidbody2D:
   serializedVersion: 4
