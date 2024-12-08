@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Tooltip("Managed by the game manager to give immunity on spawn")]
+    public bool isPlayerActive = true;
     private GameManager gameManager;
     [Header("Player Movement")]
     public float moveSpeed = 5f;
@@ -32,14 +34,43 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        UpdateRotation(movement.x);
-        HandleShooting();
+        if (isPlayerActive)
+        {
+            UpdateRotation(movement.x);
+            HandleShooting();
+        }
     }
 
     void FixedUpdate()
     {
-        UpdateMovement();
-        EnforceBoundary();
+        if (isPlayerActive)
+        {
+            UpdateMovement();
+            EnforceBoundary();
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        GameObject collidedObj = collision.gameObject;
+        if (collidedObj.CompareTag("EnemyLaser") && isPlayerActive)
+        {
+            // destroy that laser and spawn in laser impact VFX
+            Destroy(collidedObj);
+            if (collidedObj.CompareTag("EnemyLaser"))
+                Instantiate(LaserImpactPrefab, new Vector3(collidedObj.transform.position.x, collidedObj.transform.position.y, 0.0f), Quaternion.identity);
+            HandleEnemyCollision();
+        }
+        if (collidedObj.CompareTag("Enemy") && isPlayerActive)
+        {
+            collidedObj.GetComponent<Enemy>().CleanUpAndDestroy(false);
+            HandleEnemyCollision();
+        }
+        if (collidedObj.CompareTag("HealthPickup"))
+        {
+            GameManager.GM.HealEarth(1);
+            Destroy(collidedObj);
+        }
     }
 
     private void UpdateMovement()
@@ -72,38 +103,18 @@ public class PlayerController : MonoBehaviour
         transform.position = clampedPosition;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("EnemyLaser") || collision.gameObject.CompareTag("Enemy"))
-        {
-            // destroy that laser and spawn in laser impact VFX
-            Destroy(collision.gameObject);
-            if (collision.gameObject.CompareTag("EnemyLaser"))
-                Instantiate(LaserImpactPrefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, 0.0f), Quaternion.identity);
-            HandleEnemyCollision();
-        }
-        if (collision.gameObject.CompareTag("HealthPickup"))
-        {
-            GameManager.GM.HealEarth(1);
-            Destroy(collision.gameObject);
-        }
-    }
-
     private void HandleEnemyCollision()
     {
         Debug.Log("Handling enemy collision...");
         Destroy(gameObject);
         Instantiate(ShipDeathVFXPrefab, new Vector3(transform.position.x, transform.position.y, 0.0f), Quaternion.identity);
         gameManager.PlayerDied();
-        // TODO: Add Destruction/Damage Animation
-        // TODO: Add Destruction/Damage SFX
     }
 
     private void HandleShooting()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            // TODO: Play Laser shot SFX
             ShootLaser();
         }
     }

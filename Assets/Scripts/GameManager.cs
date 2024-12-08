@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     [Tooltip("Time to wait before respawning the player")]
     public float respawnCooldown = 3f;
     private GameObject playerInstance;
+    private PlayerController playerController;
     private bool isPlayerAscending = false;
 
     [Header("Enemies")]
@@ -222,6 +223,8 @@ public class GameManager : MonoBehaviour
         {
             // Spawn the player at the starting position
             playerInstance = Instantiate(playerPrefab, playerStartPos, Quaternion.identity);
+            playerController = playerInstance.GetComponent<PlayerController>();
+            playerController.isPlayerActive = false;
             isPlayerAscending = true;
         }
     }
@@ -241,6 +244,7 @@ public class GameManager : MonoBehaviour
             if (Vector2.Distance(playerInstance.transform.position, playerFinalPos) < 0.01f)
             {
                 isPlayerAscending = false;
+                playerController.isPlayerActive = true;
                 Debug.Log("Player ascent complete.");
             }
         }

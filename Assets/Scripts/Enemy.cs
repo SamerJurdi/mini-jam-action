@@ -69,11 +69,6 @@ public class Enemy : MonoBehaviour
                 CleanUpAndDestroy(false);
             }
         }
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Destroy(collision.gameObject);
-            CleanUpAndDestroy(false);
-        }
     }
 
     public void CleanUpAndDestroy(bool hideSFX)
