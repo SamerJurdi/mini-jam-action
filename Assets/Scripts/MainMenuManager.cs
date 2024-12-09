@@ -7,10 +7,7 @@ public class MainMenuManager : MonoBehaviour
     public float titleFinalPosY;
     public GameObject howToPlay;
     //public SpriteRenderer howToPlayImage;
-    private bool isHowToPlayImageDisplaying = false;
     private float howToPlayhidTimeStamp;
-    private float howToPlayPosX;
-    private float howToPlayPosY;
 
     void Start()
     {
@@ -46,14 +43,12 @@ public class MainMenuManager : MonoBehaviour
         if (Time.time - howToPlayhidTimeStamp > 0.2f)
         {
             howToPlay.transform.position = new Vector3(Camera.main.transform.position.x + Camera.main.pixelWidth/2, howToPlay.transform.position.y, 0);
-            isHowToPlayImageDisplaying = true;
         }
     }
     // show how to play
     public void HideHowToPlay()
     {
         howToPlay.transform.position = new Vector3(100000f, howToPlay.transform.position.y, 0);
-        isHowToPlayImageDisplaying = false;
         howToPlayhidTimeStamp = Time.time;
     }
 }
