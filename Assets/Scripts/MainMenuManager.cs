@@ -14,9 +14,7 @@ public class MainMenuManager : MonoBehaviour
 
     void Start()
     {
-        //howToPlayImage = howToPlay.GetComponent<Image>();
         //HideHowToPlay();
-        Debug.Log("position x is: " + howToPlay.transform.position.x);
     }
     void Update()
     {
@@ -47,7 +45,6 @@ public class MainMenuManager : MonoBehaviour
     {
         if (Time.time - howToPlayhidTimeStamp > 0.2f)
         {
-            //howToPlayImage.SetEnabled(true);
             howToPlay.transform.position = new Vector3(Camera.main.transform.position.x + Camera.main.pixelWidth/2, howToPlay.transform.position.y, 0);
             isHowToPlayImageDisplaying = true;
         }
@@ -55,7 +52,6 @@ public class MainMenuManager : MonoBehaviour
     // show how to play
     public void HideHowToPlay()
     {
-        //howToPlayImage.SetEnabled(false);
         howToPlay.transform.position = new Vector3(100000f, howToPlay.transform.position.y, 0);
         isHowToPlayImageDisplaying = false;
         howToPlayhidTimeStamp = Time.time;

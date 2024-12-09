@@ -136,14 +136,17 @@ public class PlayerController : MonoBehaviour
 
     private void HandleShooting()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Time.timeScale > 0)
         {
-            ShootLaser();
-        }
-        if (Input.GetButtonDown("Fire2"))
-        {
-            if(hasMissile)
-                ShootMissile();
+            if (Input.GetButtonDown("Fire1"))
+            {
+                ShootLaser();
+            }
+            if (Input.GetButtonDown("Fire2"))
+            {
+                if (hasMissile)
+                    ShootMissile();
+            }
         }
     }
 
